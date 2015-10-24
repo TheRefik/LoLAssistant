@@ -1,0 +1,17 @@
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\bin\Debug\LoLAssistant.exe.config
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\bin\Debug\LoLAssistant.exe
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\bin\Debug\MetroFramework.Design.dll
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\bin\Debug\MetroFramework.dll
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\obj\Debug\Metro_WInForm.Main.resources
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\obj\Debug\Metro_WInForm.Properties.Resources.resources
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\obj\Debug\Metro_WInForm.csproj.GenerateResource.Cache
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\obj\Debug\LoLAssistant.exe
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\Metro_WInForm\Metro_WInForm\obj\Debug\LoLAssistant.pdb
+C:\Users\bodah\documents\visual studio 2015\Projects\Metro_WInForm\Metro_WInForm\bin\Debug\LoLAssistant.pdb
+C:\Users\bodah\documents\visual studio 2015\Projects\Metro_WInForm\Metro_WInForm\obj\Debug\Metro_WInForm.csprojResolveAssemblyReference.cache
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistent\Metro_WInForm\bin\Debug\LoLAssistant.exe.config
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistent\Metro_WInForm\obj\Debug\LoLAssistant.exe
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistent\Metro_WInForm\obj\Debug\LoLAssistant.pdb

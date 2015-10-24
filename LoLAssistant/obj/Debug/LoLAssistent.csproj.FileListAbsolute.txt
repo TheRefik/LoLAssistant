@@ -1,0 +1,3 @@
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistent\Metro_WInForm\bin\Debug\LoLAssistant.exe.config
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistent\Metro_WInForm\obj\Debug\LoLAssistant.exe
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistent\Metro_WInForm\obj\Debug\LoLAssistant.pdb

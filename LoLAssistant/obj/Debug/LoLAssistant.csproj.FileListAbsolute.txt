@@ -1,0 +1,14 @@
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\bin\Debug\LoLAssistant.exe.config
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\obj\Debug\LoLAssistant.exe
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\obj\Debug\LoLAssistant.pdb
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\bin\Debug\LoLAssistant.exe
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\bin\Debug\LoLAssistant.pdb
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\bin\Debug\MetroFramework.Design.dll
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\bin\Debug\MetroFramework.dll
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\obj\Debug\LoLAssistant.csprojResolveAssemblyReference.cache
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\obj\Debug\LoLAssistant.Main.resources
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\obj\Debug\LoLAssistant.Properties.Resources.resources
+C:\Users\bodah\Documents\Visual Studio 2015\Projects\LoLAssistant\LoLAssistant\obj\Debug\LoLAssistant.csproj.GenerateResource.Cache
