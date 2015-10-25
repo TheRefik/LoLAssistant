@@ -34,20 +34,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.StyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.seachButton = new MetroFramework.Controls.MetroButton();
-            this.TextBoxSummonerName = new MetroFramework.Controls.MetroTextBox();
-            this.regionsComboBox = new MetroFramework.Controls.MetroComboBox();
-            this.basicPage = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel1 = new System.Windows.Forms.Label();
-            this.SaveChechBox = new MetroFramework.Controls.MetroCheckBox();
-            this.SummonerCheckBox = new MetroFramework.Controls.MetroRadioButton();
-            this.LiveMatchCheckBox = new MetroFramework.Controls.MetroRadioButton();
-            this.loadingLabel = new MetroFramework.Controls.MetroLabel();
             this.emptyTextBoxControlTimer = new System.Windows.Forms.Timer(this.components);
             this.SummonerInfoPanel = new MetroFramework.Controls.MetroPanel();
             this.ChampionSearchTextBox = new MetroFramework.Controls.MetroTextBox();
             this.DivisionLabel = new System.Windows.Forms.Label();
-            this.DivisionPictureBox = new System.Windows.Forms.PictureBox();
             this.AssistNumbLabel = new System.Windows.Forms.Label();
             this.DeathsNumbLabel = new System.Windows.Forms.Label();
             this.KillNumbLabel = new System.Windows.Forms.Label();
@@ -59,79 +49,89 @@
             this.levelLabel = new System.Windows.Forms.Label();
             this.ChampionsInfoGrid = new MetroFramework.Controls.MetroGrid();
             this.backButton = new MetroFramework.Controls.MetroButton();
-            this.SummonerIconPictureBox = new System.Windows.Forms.PictureBox();
             this.SummonerNameLabel = new System.Windows.Forms.Label();
             this.TypeLabel = new System.Windows.Forms.Label();
             this.FIVEvsFIVEpanel = new MetroFramework.Controls.MetroPanel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.Summoner10 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Summoner5 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.Summoner9 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.Summoner8 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Summoner4 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.Summoner7 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.Summoner3 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.Summoner6 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Summoner2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Summoner1 = new System.Windows.Forms.Label();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.basicPage = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel1 = new System.Windows.Forms.Label();
+            this.SaveChechBox = new MetroFramework.Controls.MetroCheckBox();
+            this.SummonerCheckBox = new MetroFramework.Controls.MetroRadioButton();
+            this.LiveMatchCheckBox = new MetroFramework.Controls.MetroRadioButton();
+            this.loadingLabel = new MetroFramework.Controls.MetroLabel();
+            this.regionsComboBox = new MetroFramework.Controls.MetroComboBox();
+            this.TextBoxSummonerName = new MetroFramework.Controls.MetroTextBox();
+            this.seachButton = new MetroFramework.Controls.MetroButton();
+            this.DivisionPictureBox = new System.Windows.Forms.PictureBox();
+            this.SummonerIconPictureBox = new System.Windows.Forms.PictureBox();
             this.banPB6 = new System.Windows.Forms.PictureBox();
             this.banPB4 = new System.Windows.Forms.PictureBox();
             this.banPB2 = new System.Windows.Forms.PictureBox();
             this.banPB5 = new System.Windows.Forms.PictureBox();
             this.banPB3 = new System.Windows.Forms.PictureBox();
             this.banPB1 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox9 = new System.Windows.Forms.PictureBox();
-            this.Summoner10 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox4 = new System.Windows.Forms.PictureBox();
-            this.Summoner5 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox8 = new System.Windows.Forms.PictureBox();
-            this.Summoner9 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox7 = new System.Windows.Forms.PictureBox();
-            this.Summoner8 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox3 = new System.Windows.Forms.PictureBox();
-            this.Summoner4 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox6 = new System.Windows.Forms.PictureBox();
-            this.Summoner7 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Summoner3 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox5 = new System.Windows.Forms.PictureBox();
-            this.Summoner6 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Summoner2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.TeamMatePictureBox0 = new System.Windows.Forms.PictureBox();
-            this.Summoner1 = new System.Windows.Forms.Label();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).BeginInit();
-            this.basicPage.SuspendLayout();
             this.SummonerInfoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DivisionPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChampionsInfoGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SummonerIconPictureBox)).BeginInit();
             this.FIVEvsFIVEpanel.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.basicPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DivisionPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SummonerIconPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB1)).BeginInit();
-            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox9)).BeginInit();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox4)).BeginInit();
-            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox8)).BeginInit();
-            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox7)).BeginInit();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox3)).BeginInit();
-            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox6)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox2)).BeginInit();
-            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox5)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox0)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,102 +139,6 @@
             // 
             this.StyleManager.Owner = this;
             this.StyleManager.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // seachButton
-            // 
-            this.seachButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            resources.ApplyResources(this.seachButton, "seachButton");
-            this.seachButton.Name = "seachButton";
-            this.seachButton.UseSelectable = true;
-            this.seachButton.Click += new System.EventHandler(this.metroButton1_Click_1);
-            // 
-            // TextBoxSummonerName
-            // 
-            // 
-            // 
-            // 
-            this.TextBoxSummonerName.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.TextBoxSummonerName.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
-            this.TextBoxSummonerName.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
-            this.TextBoxSummonerName.CustomButton.Name = "";
-            this.TextBoxSummonerName.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
-            this.TextBoxSummonerName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TextBoxSummonerName.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
-            this.TextBoxSummonerName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TextBoxSummonerName.CustomButton.UseSelectable = true;
-            this.TextBoxSummonerName.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
-            this.TextBoxSummonerName.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.TextBoxSummonerName.Lines = new string[0];
-            resources.ApplyResources(this.TextBoxSummonerName, "TextBoxSummonerName");
-            this.TextBoxSummonerName.MaxLength = 32767;
-            this.TextBoxSummonerName.Name = "TextBoxSummonerName";
-            this.TextBoxSummonerName.PasswordChar = '\0';
-            this.TextBoxSummonerName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBoxSummonerName.SelectedText = "";
-            this.TextBoxSummonerName.SelectionLength = 0;
-            this.TextBoxSummonerName.SelectionStart = 0;
-            this.TextBoxSummonerName.UseSelectable = true;
-            this.TextBoxSummonerName.WaterMark = "Summoner name";
-            this.TextBoxSummonerName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TextBoxSummonerName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TextBoxSummonerName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxSummonerName_KeyDown);
-            // 
-            // regionsComboBox
-            // 
-            this.regionsComboBox.FormattingEnabled = true;
-            resources.ApplyResources(this.regionsComboBox, "regionsComboBox");
-            this.regionsComboBox.Name = "regionsComboBox";
-            this.regionsComboBox.UseSelectable = true;
-            // 
-            // basicPage
-            // 
-            this.basicPage.Controls.Add(this.metroLabel1);
-            this.basicPage.Controls.Add(this.SaveChechBox);
-            this.basicPage.Controls.Add(this.SummonerCheckBox);
-            this.basicPage.Controls.Add(this.LiveMatchCheckBox);
-            this.basicPage.Controls.Add(this.loadingLabel);
-            this.basicPage.Controls.Add(this.regionsComboBox);
-            this.basicPage.Controls.Add(this.TextBoxSummonerName);
-            this.basicPage.Controls.Add(this.seachButton);
-            resources.ApplyResources(this.basicPage, "basicPage");
-            this.basicPage.HorizontalScrollbarBarColor = true;
-            this.basicPage.HorizontalScrollbarHighlightOnWheel = false;
-            this.basicPage.HorizontalScrollbarSize = 10;
-            this.basicPage.Name = "basicPage";
-            this.basicPage.VerticalScrollbarBarColor = true;
-            this.basicPage.VerticalScrollbarHighlightOnWheel = false;
-            this.basicPage.VerticalScrollbarSize = 10;
-            // 
-            // metroLabel1
-            // 
-            resources.ApplyResources(this.metroLabel1, "metroLabel1");
-            this.metroLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.metroLabel1.Name = "metroLabel1";
-            // 
-            // SaveChechBox
-            // 
-            resources.ApplyResources(this.SaveChechBox, "SaveChechBox");
-            this.SaveChechBox.Name = "SaveChechBox";
-            this.SaveChechBox.UseSelectable = true;
-            // 
-            // SummonerCheckBox
-            // 
-            resources.ApplyResources(this.SummonerCheckBox, "SummonerCheckBox");
-            this.SummonerCheckBox.Name = "SummonerCheckBox";
-            this.SummonerCheckBox.UseSelectable = true;
-            // 
-            // LiveMatchCheckBox
-            // 
-            resources.ApplyResources(this.LiveMatchCheckBox, "LiveMatchCheckBox");
-            this.LiveMatchCheckBox.Checked = true;
-            this.LiveMatchCheckBox.Name = "LiveMatchCheckBox";
-            this.LiveMatchCheckBox.TabStop = true;
-            this.LiveMatchCheckBox.UseSelectable = true;
-            // 
-            // loadingLabel
-            // 
-            resources.ApplyResources(this.loadingLabel, "loadingLabel");
-            this.loadingLabel.Name = "loadingLabel";
             // 
             // emptyTextBoxControlTimer
             // 
@@ -303,12 +207,6 @@
             this.DivisionLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.DivisionLabel.ForeColor = System.Drawing.Color.White;
             this.DivisionLabel.Name = "DivisionLabel";
-            // 
-            // DivisionPictureBox
-            // 
-            resources.ApplyResources(this.DivisionPictureBox, "DivisionPictureBox");
-            this.DivisionPictureBox.Name = "DivisionPictureBox";
-            this.DivisionPictureBox.TabStop = false;
             // 
             // AssistNumbLabel
             // 
@@ -429,13 +327,6 @@
             this.backButton.UseSelectable = true;
             this.backButton.Click += new System.EventHandler(this.BackToMenu);
             // 
-            // SummonerIconPictureBox
-            // 
-            this.SummonerIconPictureBox.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.SummonerIconPictureBox, "SummonerIconPictureBox");
-            this.SummonerIconPictureBox.Name = "SummonerIconPictureBox";
-            this.SummonerIconPictureBox.TabStop = false;
-            // 
             // SummonerNameLabel
             // 
             resources.ApplyResources(this.SummonerNameLabel, "SummonerNameLabel");
@@ -476,6 +367,311 @@
             this.FIVEvsFIVEpanel.VerticalScrollbarHighlightOnWheel = false;
             this.FIVEvsFIVEpanel.VerticalScrollbarSize = 10;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Controls.Add(this.TeamMatePictureBox9);
+            this.panel6.Controls.Add(this.Summoner10);
+            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            this.panel6.Click += new System.EventHandler(this.panel10_Click);
+            // 
+            // Summoner10
+            // 
+            resources.ApplyResources(this.Summoner10, "Summoner10");
+            this.Summoner10.BackColor = System.Drawing.Color.Black;
+            this.Summoner10.ForeColor = System.Drawing.Color.White;
+            this.Summoner10.Name = "Summoner10";
+            this.Summoner10.Click += new System.EventHandler(this.panel10_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Controls.Add(this.TeamMatePictureBox4);
+            this.panel5.Controls.Add(this.Summoner5);
+            this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            this.panel5.Click += new System.EventHandler(this.panel5_Click);
+            // 
+            // Summoner5
+            // 
+            resources.ApplyResources(this.Summoner5, "Summoner5");
+            this.Summoner5.BackColor = System.Drawing.Color.Black;
+            this.Summoner5.ForeColor = System.Drawing.Color.White;
+            this.Summoner5.Name = "Summoner5";
+            this.Summoner5.Click += new System.EventHandler(this.panel5_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.Controls.Add(this.TeamMatePictureBox8);
+            this.panel7.Controls.Add(this.Summoner9);
+            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            this.panel7.Click += new System.EventHandler(this.panel9_Click);
+            // 
+            // Summoner9
+            // 
+            resources.ApplyResources(this.Summoner9, "Summoner9");
+            this.Summoner9.BackColor = System.Drawing.Color.Black;
+            this.Summoner9.ForeColor = System.Drawing.Color.White;
+            this.Summoner9.Name = "Summoner9";
+            this.Summoner9.Click += new System.EventHandler(this.panel9_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Black;
+            this.panel8.Controls.Add(this.TeamMatePictureBox7);
+            this.panel8.Controls.Add(this.Summoner8);
+            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            this.panel8.Click += new System.EventHandler(this.panel8_Click);
+            // 
+            // Summoner8
+            // 
+            resources.ApplyResources(this.Summoner8, "Summoner8");
+            this.Summoner8.BackColor = System.Drawing.Color.Black;
+            this.Summoner8.ForeColor = System.Drawing.Color.White;
+            this.Summoner8.Name = "Summoner8";
+            this.Summoner8.Click += new System.EventHandler(this.panel8_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Controls.Add(this.TeamMatePictureBox3);
+            this.panel4.Controls.Add(this.Summoner4);
+            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
+            // 
+            // Summoner4
+            // 
+            resources.ApplyResources(this.Summoner4, "Summoner4");
+            this.Summoner4.BackColor = System.Drawing.Color.Black;
+            this.Summoner4.ForeColor = System.Drawing.Color.White;
+            this.Summoner4.Name = "Summoner4";
+            this.Summoner4.Click += new System.EventHandler(this.panel4_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Black;
+            this.panel9.Controls.Add(this.TeamMatePictureBox6);
+            this.panel9.Controls.Add(this.Summoner7);
+            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            this.panel9.Click += new System.EventHandler(this.panel2_Click);
+            // 
+            // Summoner7
+            // 
+            resources.ApplyResources(this.Summoner7, "Summoner7");
+            this.Summoner7.BackColor = System.Drawing.Color.Black;
+            this.Summoner7.ForeColor = System.Drawing.Color.White;
+            this.Summoner7.Name = "Summoner7";
+            this.Summoner7.Click += new System.EventHandler(this.panel7_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.TeamMatePictureBox2);
+            this.panel3.Controls.Add(this.Summoner3);
+            this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            this.panel3.Click += new System.EventHandler(this.panel3_Click);
+            // 
+            // Summoner3
+            // 
+            resources.ApplyResources(this.Summoner3, "Summoner3");
+            this.Summoner3.BackColor = System.Drawing.Color.Black;
+            this.Summoner3.ForeColor = System.Drawing.Color.White;
+            this.Summoner3.Name = "Summoner3";
+            this.Summoner3.Click += new System.EventHandler(this.panel3_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Black;
+            this.panel10.Controls.Add(this.TeamMatePictureBox5);
+            this.panel10.Controls.Add(this.Summoner6);
+            this.panel10.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
+            this.panel10.Click += new System.EventHandler(this.panel6_Click);
+            // 
+            // Summoner6
+            // 
+            resources.ApplyResources(this.Summoner6, "Summoner6");
+            this.Summoner6.BackColor = System.Drawing.Color.Black;
+            this.Summoner6.ForeColor = System.Drawing.Color.White;
+            this.Summoner6.Name = "Summoner6";
+            this.Summoner6.Click += new System.EventHandler(this.panel6_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.TeamMatePictureBox1);
+            this.panel2.Controls.Add(this.Summoner2);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            this.panel2.Click += new System.EventHandler(this.panel2_Click);
+            // 
+            // Summoner2
+            // 
+            resources.ApplyResources(this.Summoner2, "Summoner2");
+            this.Summoner2.BackColor = System.Drawing.Color.Black;
+            this.Summoner2.ForeColor = System.Drawing.Color.White;
+            this.Summoner2.Name = "Summoner2";
+            this.Summoner2.Click += new System.EventHandler(this.panel2_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.TeamMatePictureBox0);
+            this.panel1.Controls.Add(this.Summoner1);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Summoner1
+            // 
+            resources.ApplyResources(this.Summoner1, "Summoner1");
+            this.Summoner1.BackColor = System.Drawing.Color.Black;
+            this.Summoner1.ForeColor = System.Drawing.Color.White;
+            this.Summoner1.Name = "Summoner1";
+            this.Summoner1.Click += new System.EventHandler(this.panel1_Click);
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.metroButton1, "metroButton1");
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.BackToMenu);
+            // 
+            // basicPage
+            // 
+            resources.ApplyResources(this.basicPage, "basicPage");
+            this.basicPage.Controls.Add(this.metroLabel1);
+            this.basicPage.Controls.Add(this.SaveChechBox);
+            this.basicPage.Controls.Add(this.SummonerCheckBox);
+            this.basicPage.Controls.Add(this.LiveMatchCheckBox);
+            this.basicPage.Controls.Add(this.loadingLabel);
+            this.basicPage.Controls.Add(this.regionsComboBox);
+            this.basicPage.Controls.Add(this.TextBoxSummonerName);
+            this.basicPage.Controls.Add(this.seachButton);
+            this.basicPage.HorizontalScrollbarBarColor = true;
+            this.basicPage.HorizontalScrollbarHighlightOnWheel = false;
+            this.basicPage.HorizontalScrollbarSize = 10;
+            this.basicPage.Name = "basicPage";
+            this.basicPage.VerticalScrollbarBarColor = true;
+            this.basicPage.VerticalScrollbarHighlightOnWheel = false;
+            this.basicPage.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel1
+            // 
+            resources.ApplyResources(this.metroLabel1, "metroLabel1");
+            this.metroLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.metroLabel1.Name = "metroLabel1";
+            // 
+            // SaveChechBox
+            // 
+            resources.ApplyResources(this.SaveChechBox, "SaveChechBox");
+            this.SaveChechBox.BackColor = System.Drawing.Color.Transparent;
+            this.SaveChechBox.Name = "SaveChechBox";
+            this.SaveChechBox.UseCustomBackColor = true;
+            this.SaveChechBox.UseSelectable = true;
+            // 
+            // SummonerCheckBox
+            // 
+            resources.ApplyResources(this.SummonerCheckBox, "SummonerCheckBox");
+            this.SummonerCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.SummonerCheckBox.Name = "SummonerCheckBox";
+            this.SummonerCheckBox.UseCustomBackColor = true;
+            this.SummonerCheckBox.UseSelectable = true;
+            // 
+            // LiveMatchCheckBox
+            // 
+            resources.ApplyResources(this.LiveMatchCheckBox, "LiveMatchCheckBox");
+            this.LiveMatchCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.LiveMatchCheckBox.Checked = true;
+            this.LiveMatchCheckBox.Name = "LiveMatchCheckBox";
+            this.LiveMatchCheckBox.TabStop = true;
+            this.LiveMatchCheckBox.UseCustomBackColor = true;
+            this.LiveMatchCheckBox.UseSelectable = true;
+            // 
+            // loadingLabel
+            // 
+            resources.ApplyResources(this.loadingLabel, "loadingLabel");
+            this.loadingLabel.Name = "loadingLabel";
+            // 
+            // regionsComboBox
+            // 
+            this.regionsComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.regionsComboBox, "regionsComboBox");
+            this.regionsComboBox.Name = "regionsComboBox";
+            this.regionsComboBox.UseSelectable = true;
+            // 
+            // TextBoxSummonerName
+            // 
+            // 
+            // 
+            // 
+            this.TextBoxSummonerName.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.TextBoxSummonerName.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
+            this.TextBoxSummonerName.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
+            this.TextBoxSummonerName.CustomButton.Name = "";
+            this.TextBoxSummonerName.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
+            this.TextBoxSummonerName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TextBoxSummonerName.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
+            this.TextBoxSummonerName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TextBoxSummonerName.CustomButton.UseSelectable = true;
+            this.TextBoxSummonerName.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
+            this.TextBoxSummonerName.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TextBoxSummonerName.Lines = new string[0];
+            resources.ApplyResources(this.TextBoxSummonerName, "TextBoxSummonerName");
+            this.TextBoxSummonerName.MaxLength = 32767;
+            this.TextBoxSummonerName.Name = "TextBoxSummonerName";
+            this.TextBoxSummonerName.PasswordChar = '\0';
+            this.TextBoxSummonerName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxSummonerName.SelectedText = "";
+            this.TextBoxSummonerName.SelectionLength = 0;
+            this.TextBoxSummonerName.SelectionStart = 0;
+            this.TextBoxSummonerName.UseSelectable = true;
+            this.TextBoxSummonerName.WaterMark = "Summoner name";
+            this.TextBoxSummonerName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TextBoxSummonerName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TextBoxSummonerName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxSummonerName_KeyDown);
+            // 
+            // seachButton
+            // 
+            this.seachButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.seachButton, "seachButton");
+            this.seachButton.Name = "seachButton";
+            this.seachButton.UseSelectable = true;
+            this.seachButton.Click += new System.EventHandler(this.metroButton1_Click_1);
+            // 
+            // DivisionPictureBox
+            // 
+            resources.ApplyResources(this.DivisionPictureBox, "DivisionPictureBox");
+            this.DivisionPictureBox.Name = "DivisionPictureBox";
+            this.DivisionPictureBox.TabStop = false;
+            // 
+            // SummonerIconPictureBox
+            // 
+            this.SummonerIconPictureBox.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.SummonerIconPictureBox, "SummonerIconPictureBox");
+            this.SummonerIconPictureBox.Name = "SummonerIconPictureBox";
+            this.SummonerIconPictureBox.TabStop = false;
+            // 
             // banPB6
             // 
             resources.ApplyResources(this.banPB6, "banPB6");
@@ -512,40 +708,12 @@
             this.banPB1.Name = "banPB1";
             this.banPB1.TabStop = false;
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Controls.Add(this.TeamMatePictureBox9);
-            this.panel6.Controls.Add(this.Summoner10);
-            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.Name = "panel6";
-            this.panel6.Click += new System.EventHandler(this.panel10_Click);
-            // 
             // TeamMatePictureBox9
             // 
             resources.ApplyResources(this.TeamMatePictureBox9, "TeamMatePictureBox9");
             this.TeamMatePictureBox9.Name = "TeamMatePictureBox9";
             this.TeamMatePictureBox9.TabStop = false;
             this.TeamMatePictureBox9.Click += new System.EventHandler(this.panel10_Click);
-            // 
-            // Summoner10
-            // 
-            resources.ApplyResources(this.Summoner10, "Summoner10");
-            this.Summoner10.BackColor = System.Drawing.Color.Black;
-            this.Summoner10.ForeColor = System.Drawing.Color.White;
-            this.Summoner10.Name = "Summoner10";
-            this.Summoner10.Click += new System.EventHandler(this.panel10_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Controls.Add(this.TeamMatePictureBox4);
-            this.panel5.Controls.Add(this.Summoner5);
-            this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
-            this.panel5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // TeamMatePictureBox4
             // 
@@ -554,48 +722,12 @@
             this.TeamMatePictureBox4.TabStop = false;
             this.TeamMatePictureBox4.Click += new System.EventHandler(this.panel5_Click);
             // 
-            // Summoner5
-            // 
-            resources.ApplyResources(this.Summoner5, "Summoner5");
-            this.Summoner5.BackColor = System.Drawing.Color.Black;
-            this.Summoner5.ForeColor = System.Drawing.Color.White;
-            this.Summoner5.Name = "Summoner5";
-            this.Summoner5.Click += new System.EventHandler(this.panel5_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Black;
-            this.panel7.Controls.Add(this.TeamMatePictureBox8);
-            this.panel7.Controls.Add(this.Summoner9);
-            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
-            this.panel7.Click += new System.EventHandler(this.panel9_Click);
-            // 
             // TeamMatePictureBox8
             // 
             resources.ApplyResources(this.TeamMatePictureBox8, "TeamMatePictureBox8");
             this.TeamMatePictureBox8.Name = "TeamMatePictureBox8";
             this.TeamMatePictureBox8.TabStop = false;
             this.TeamMatePictureBox8.Click += new System.EventHandler(this.panel9_Click);
-            // 
-            // Summoner9
-            // 
-            resources.ApplyResources(this.Summoner9, "Summoner9");
-            this.Summoner9.BackColor = System.Drawing.Color.Black;
-            this.Summoner9.ForeColor = System.Drawing.Color.White;
-            this.Summoner9.Name = "Summoner9";
-            this.Summoner9.Click += new System.EventHandler(this.panel9_Click);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Black;
-            this.panel8.Controls.Add(this.TeamMatePictureBox7);
-            this.panel8.Controls.Add(this.Summoner8);
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
-            this.panel8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // TeamMatePictureBox7
             // 
@@ -604,48 +736,12 @@
             this.TeamMatePictureBox7.TabStop = false;
             this.TeamMatePictureBox7.Click += new System.EventHandler(this.panel8_Click);
             // 
-            // Summoner8
-            // 
-            resources.ApplyResources(this.Summoner8, "Summoner8");
-            this.Summoner8.BackColor = System.Drawing.Color.Black;
-            this.Summoner8.ForeColor = System.Drawing.Color.White;
-            this.Summoner8.Name = "Summoner8";
-            this.Summoner8.Click += new System.EventHandler(this.panel8_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Controls.Add(this.TeamMatePictureBox3);
-            this.panel4.Controls.Add(this.Summoner4);
-            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
-            this.panel4.Click += new System.EventHandler(this.panel4_Click);
-            // 
             // TeamMatePictureBox3
             // 
             resources.ApplyResources(this.TeamMatePictureBox3, "TeamMatePictureBox3");
             this.TeamMatePictureBox3.Name = "TeamMatePictureBox3";
             this.TeamMatePictureBox3.TabStop = false;
             this.TeamMatePictureBox3.Click += new System.EventHandler(this.panel4_Click);
-            // 
-            // Summoner4
-            // 
-            resources.ApplyResources(this.Summoner4, "Summoner4");
-            this.Summoner4.BackColor = System.Drawing.Color.Black;
-            this.Summoner4.ForeColor = System.Drawing.Color.White;
-            this.Summoner4.Name = "Summoner4";
-            this.Summoner4.Click += new System.EventHandler(this.panel4_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Black;
-            this.panel9.Controls.Add(this.TeamMatePictureBox6);
-            this.panel9.Controls.Add(this.Summoner7);
-            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
-            this.panel9.Click += new System.EventHandler(this.panel2_Click);
             // 
             // TeamMatePictureBox6
             // 
@@ -654,48 +750,12 @@
             this.TeamMatePictureBox6.TabStop = false;
             this.TeamMatePictureBox6.Click += new System.EventHandler(this.panel7_Click);
             // 
-            // Summoner7
-            // 
-            resources.ApplyResources(this.Summoner7, "Summoner7");
-            this.Summoner7.BackColor = System.Drawing.Color.Black;
-            this.Summoner7.ForeColor = System.Drawing.Color.White;
-            this.Summoner7.Name = "Summoner7";
-            this.Summoner7.Click += new System.EventHandler(this.panel7_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Controls.Add(this.TeamMatePictureBox2);
-            this.panel3.Controls.Add(this.Summoner3);
-            this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
-            this.panel3.Click += new System.EventHandler(this.panel3_Click);
-            // 
             // TeamMatePictureBox2
             // 
             resources.ApplyResources(this.TeamMatePictureBox2, "TeamMatePictureBox2");
             this.TeamMatePictureBox2.Name = "TeamMatePictureBox2";
             this.TeamMatePictureBox2.TabStop = false;
             this.TeamMatePictureBox2.Click += new System.EventHandler(this.panel3_Click);
-            // 
-            // Summoner3
-            // 
-            resources.ApplyResources(this.Summoner3, "Summoner3");
-            this.Summoner3.BackColor = System.Drawing.Color.Black;
-            this.Summoner3.ForeColor = System.Drawing.Color.White;
-            this.Summoner3.Name = "Summoner3";
-            this.Summoner3.Click += new System.EventHandler(this.panel3_Click);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Black;
-            this.panel10.Controls.Add(this.TeamMatePictureBox5);
-            this.panel10.Controls.Add(this.Summoner6);
-            this.panel10.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel10, "panel10");
-            this.panel10.Name = "panel10";
-            this.panel10.Click += new System.EventHandler(this.panel6_Click);
             // 
             // TeamMatePictureBox5
             // 
@@ -704,24 +764,6 @@
             this.TeamMatePictureBox5.TabStop = false;
             this.TeamMatePictureBox5.Click += new System.EventHandler(this.panel6_Click);
             // 
-            // Summoner6
-            // 
-            resources.ApplyResources(this.Summoner6, "Summoner6");
-            this.Summoner6.BackColor = System.Drawing.Color.Black;
-            this.Summoner6.ForeColor = System.Drawing.Color.White;
-            this.Summoner6.Name = "Summoner6";
-            this.Summoner6.Click += new System.EventHandler(this.panel6_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.TeamMatePictureBox1);
-            this.panel2.Controls.Add(this.Summoner2);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            this.panel2.Click += new System.EventHandler(this.panel2_Click);
-            // 
             // TeamMatePictureBox1
             // 
             resources.ApplyResources(this.TeamMatePictureBox1, "TeamMatePictureBox1");
@@ -729,47 +771,12 @@
             this.TeamMatePictureBox1.TabStop = false;
             this.TeamMatePictureBox1.Click += new System.EventHandler(this.panel2_Click);
             // 
-            // Summoner2
-            // 
-            resources.ApplyResources(this.Summoner2, "Summoner2");
-            this.Summoner2.BackColor = System.Drawing.Color.Black;
-            this.Summoner2.ForeColor = System.Drawing.Color.White;
-            this.Summoner2.Name = "Summoner2";
-            this.Summoner2.Click += new System.EventHandler(this.panel2_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.TeamMatePictureBox0);
-            this.panel1.Controls.Add(this.Summoner1);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            this.panel1.Click += new System.EventHandler(this.panel1_Click);
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // TeamMatePictureBox0
             // 
             resources.ApplyResources(this.TeamMatePictureBox0, "TeamMatePictureBox0");
             this.TeamMatePictureBox0.Name = "TeamMatePictureBox0";
             this.TeamMatePictureBox0.TabStop = false;
             this.TeamMatePictureBox0.Click += new System.EventHandler(this.panel1_Click);
-            // 
-            // Summoner1
-            // 
-            resources.ApplyResources(this.Summoner1, "Summoner1");
-            this.Summoner1.BackColor = System.Drawing.Color.Black;
-            this.Summoner1.ForeColor = System.Drawing.Color.White;
-            this.Summoner1.Name = "Summoner1";
-            this.Summoner1.Click += new System.EventHandler(this.panel1_Click);
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            resources.ApplyResources(this.metroButton1, "metroButton1");
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.BackToMenu);
             // 
             // Main
             // 
@@ -785,49 +792,49 @@
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).EndInit();
-            this.basicPage.ResumeLayout(false);
-            this.basicPage.PerformLayout();
             this.SummonerInfoPanel.ResumeLayout(false);
             this.SummonerInfoPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DivisionPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChampionsInfoGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SummonerIconPictureBox)).EndInit();
             this.FIVEvsFIVEpanel.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.basicPage.ResumeLayout(false);
+            this.basicPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DivisionPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SummonerIconPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.banPB1)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox9)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox4)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox8)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox7)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox3)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox6)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox2)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox5)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamMatePictureBox0)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

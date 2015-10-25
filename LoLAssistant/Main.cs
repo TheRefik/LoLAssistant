@@ -213,7 +213,7 @@ namespace LoLAssistant
                     if (MatchInfo.gameQueueConfigId == 4 || MatchInfo.gameQueueConfigId == 6 || MatchInfo.gameQueueConfigId == 9 || MatchInfo.gameQueueConfigId == 41 || MatchInfo.gameQueueConfigId == 42)
                     {
                         PictureBox[] pbBans = new PictureBox[6] { banPB1, banPB2, banPB3, banPB4, banPB5, banPB6 };
-                        for (int i = 10; i < 16; i++)
+                        for (int i = 10; i < Keys.Length; i++)
                         {
                             var request = WebRequest.Create("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
                             using (var response = request.GetResponse())
