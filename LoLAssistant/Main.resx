@@ -134,42 +134,48 @@
   <data name="basicPage.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="MessageLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="metroLabel1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="MessageLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="metroLabel1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="MessageLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semilight, 11.25pt</value>
   </data>
-  <data name="metroLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="MessageLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="metroLabel1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="MessageLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>275, 122</value>
   </data>
-  <data name="metroLabel1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MessageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 20</value>
   </data>
-  <data name="metroLabel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="MessageLabel.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="metroLabel1.Text" xml:space="preserve">
+  <data name="MessageLabel.Text" xml:space="preserve">
     <value>Message</value>
   </data>
-  <data name="metroLabel1.Visible" type="System.Boolean, mscorlib">
+  <data name="MessageLabel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
-    <value>metroLabel1</value>
+  <data name="&gt;&gt;MessageLabel.Name" xml:space="preserve">
+    <value>MessageLabel</value>
   </data>
-  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;MessageLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;metroLabel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MessageLabel.Parent" xml:space="preserve">
     <value>basicPage</value>
   </data>
-  <data name="&gt;&gt;metroLabel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;MessageLabel.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="SaveChechBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="SaveChechBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -198,6 +204,9 @@
   <data name="&gt;&gt;SaveChechBox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="SummonerCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="SummonerCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -225,6 +234,9 @@
   <data name="&gt;&gt;SummonerCheckBox.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="LiveMatchCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="LiveMatchCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -251,6 +263,9 @@
   </data>
   <data name="&gt;&gt;LiveMatchCheckBox.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="loadingLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="loadingLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -282,6 +297,9 @@
   <data name="&gt;&gt;loadingLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="regionsComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="regionsComboBox.ItemHeight" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
@@ -305,6 +323,9 @@
   </data>
   <data name="&gt;&gt;regionsComboBox.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="TextBoxSummonerName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -344,6 +365,9 @@
   </data>
   <data name="&gt;&gt;TextBoxSummonerName.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="seachButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="seachButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>635, 144</value>
@@ -393,6 +417,45 @@
   <data name="&gt;&gt;basicPage.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="SpectateButton.AccessibleDescription" xml:space="preserve">
+    <value>You can spectate this match</value>
+  </data>
+  <data name="SpectateButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="SpectateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 447</value>
+  </data>
+  <data name="SpectateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 23</value>
+  </data>
+  <data name="SpectateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="SpectateButton.Text" xml:space="preserve">
+    <value>Spectate game</value>
+  </data>
+  <metadata name="LoLToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>383, 17</value>
+  </metadata>
+  <data name="SpectateButton.ToolTip" xml:space="preserve">
+    <value>you can spectate this game</value>
+  </data>
+  <data name="&gt;&gt;SpectateButton.Name" xml:space="preserve">
+    <value>SpectateButton</value>
+  </data>
+  <data name="&gt;&gt;SpectateButton.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;SpectateButton.Parent" xml:space="preserve">
+    <value>FIVEvsFIVEpanel</value>
+  </data>
+  <data name="&gt;&gt;SpectateButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="banPB6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="banPB6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -401,6 +464,9 @@
   </data>
   <data name="banPB6.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
+  </data>
+  <data name="banPB6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="banPB6.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -415,7 +481,10 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;banPB6.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="banPB4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="banPB4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -425,6 +494,9 @@
   </data>
   <data name="banPB4.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
+  </data>
+  <data name="banPB4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="banPB4.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -439,7 +511,10 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;banPB4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
+  </data>
+  <data name="banPB2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="banPB2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -449,6 +524,9 @@
   </data>
   <data name="banPB2.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
+  </data>
+  <data name="banPB2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="banPB2.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -463,7 +541,7 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;banPB2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="banPB5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -473,6 +551,9 @@
   </data>
   <data name="banPB5.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
+  </data>
+  <data name="banPB5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="banPB5.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -487,7 +568,7 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;banPB5.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="banPB3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -497,6 +578,9 @@
   </data>
   <data name="banPB3.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
+  </data>
+  <data name="banPB3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="banPB3.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -511,7 +595,7 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;banPB3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="banPB1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -521,6 +605,9 @@
   </data>
   <data name="banPB1.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
+  </data>
+  <data name="banPB1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="banPB1.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -535,7 +622,97 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;banPB1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
+  </data>
+  <data name="panel6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="DivString10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DivString10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString10.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="DivString10.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString10.Name" xml:space="preserve">
+    <value>DivString10</value>
+  </data>
+  <data name="&gt;&gt;DivString10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString10.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;DivString10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPB10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="divPB10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPB10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPB10.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPB10.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;divPB10.Name" xml:space="preserve">
+    <value>divPB10</value>
+  </data>
+  <data name="&gt;&gt;divPB10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPB10.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;divPB10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner10Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner10Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 35</value>
+  </data>
+  <data name="Summoner10Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner10Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner10Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;Summoner10Spell2.Name" xml:space="preserve">
+    <value>Summoner10Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner10Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner10Spell2.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;Summoner10Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="TeamMatePictureBox9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -545,6 +722,9 @@
   </data>
   <data name="TeamMatePictureBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox9.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox9.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -559,7 +739,34 @@
     <value>panel6</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox9.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
+  </data>
+  <data name="Summoner10Spell1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner10Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 5</value>
+  </data>
+  <data name="Summoner10Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner10Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner10Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;Summoner10Spell1.Name" xml:space="preserve">
+    <value>Summoner10Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner10Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner10Spell1.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;Summoner10Spell1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="Summoner10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -571,7 +778,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner10.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 17</value>
@@ -592,10 +799,10 @@
     <value>panel6</value>
   </data>
   <data name="&gt;&gt;Summoner10.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 336</value>
+    <value>536, 339</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>353, 72</value>
@@ -613,7 +820,121 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
+  </data>
+  <data name="DivString5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DivString5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString5.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="DivString5.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString5.Name" xml:space="preserve">
+    <value>DivString5</value>
+  </data>
+  <data name="&gt;&gt;DivString5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString5.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;DivString5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPB5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="divPB5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPB5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPB5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPB5.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;divPB5.Name" xml:space="preserve">
+    <value>divPB5</value>
+  </data>
+  <data name="&gt;&gt;divPB5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPB5.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;divPB5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner5Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner5Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 35</value>
+  </data>
+  <data name="Summoner5Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner5Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner5Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Summoner5Spell2.Name" xml:space="preserve">
+    <value>Summoner5Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner5Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner5Spell2.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;Summoner5Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Summoner5Spell1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner5Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 5</value>
+  </data>
+  <data name="Summoner5Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner5Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner5Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Summoner5Spell1.Name" xml:space="preserve">
+    <value>Summoner5Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner5Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner5Spell1.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;Summoner5Spell1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="TeamMatePictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -623,6 +944,9 @@
   </data>
   <data name="TeamMatePictureBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -637,7 +961,7 @@
     <value>panel5</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="Summoner5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -649,7 +973,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner5.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -670,10 +994,10 @@
     <value>panel5</value>
   </data>
   <data name="&gt;&gt;Summoner5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 336</value>
+    <value>73, 339</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>353, 72</value>
@@ -691,7 +1015,97 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
+  </data>
+  <data name="panel7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="DivString9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DivString9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString9.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="DivString9.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString9.Name" xml:space="preserve">
+    <value>DivString9</value>
+  </data>
+  <data name="&gt;&gt;DivString9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString9.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;DivString9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPB9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="divPB9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPB9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPB9.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPB9.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;divPB9.Name" xml:space="preserve">
+    <value>divPB9</value>
+  </data>
+  <data name="&gt;&gt;divPB9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPB9.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;divPB9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner9Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner9Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 35</value>
+  </data>
+  <data name="Summoner9Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner9Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner9Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;Summoner9Spell2.Name" xml:space="preserve">
+    <value>Summoner9Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner9Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner9Spell2.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;Summoner9Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="TeamMatePictureBox8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -701,6 +1115,9 @@
   </data>
   <data name="TeamMatePictureBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox8.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox8.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -715,7 +1132,34 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox8.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
+  </data>
+  <data name="Summoner9Spell1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner9Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 5</value>
+  </data>
+  <data name="Summoner9Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner9Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner9Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;Summoner9Spell1.Name" xml:space="preserve">
+    <value>Summoner9Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner9Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner9Spell1.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;Summoner9Spell1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="Summoner9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -727,7 +1171,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner9.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -748,7 +1192,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;Summoner9.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
     <value>536, 261</value>
@@ -769,7 +1213,124 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
+  </data>
+  <data name="panel8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="DivString8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DivString8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString8.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="DivString8.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString8.Name" xml:space="preserve">
+    <value>DivString8</value>
+  </data>
+  <data name="&gt;&gt;DivString8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString8.Parent" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;DivString8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPB8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="divPB8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPB8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPB8.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPB8.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;divPB8.Name" xml:space="preserve">
+    <value>divPB8</value>
+  </data>
+  <data name="&gt;&gt;divPB8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPB8.Parent" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;divPB8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner8Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner8Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 35</value>
+  </data>
+  <data name="Summoner8Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner8Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner8Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Summoner8Spell2.Name" xml:space="preserve">
+    <value>Summoner8Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner8Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner8Spell2.Parent" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;Summoner8Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Summoner8Spell1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner8Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 5</value>
+  </data>
+  <data name="Summoner8Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner8Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner8Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Summoner8Spell1.Name" xml:space="preserve">
+    <value>Summoner8Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner8Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner8Spell1.Parent" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;Summoner8Spell1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="TeamMatePictureBox7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -779,6 +1340,9 @@
   </data>
   <data name="TeamMatePictureBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox7.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox7.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -793,7 +1357,7 @@
     <value>panel8</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox7.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="Summoner8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -805,7 +1369,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner8.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -826,7 +1390,7 @@
     <value>panel8</value>
   </data>
   <data name="&gt;&gt;Summoner8.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
     <value>536, 183</value>
@@ -847,7 +1411,121 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel8.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
+  </data>
+  <data name="DivString4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DivString4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString4.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="DivString4.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString4.Name" xml:space="preserve">
+    <value>DivString4</value>
+  </data>
+  <data name="&gt;&gt;DivString4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString4.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;DivString4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPB4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="divPB4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPB4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPB4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPB4.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;divPB4.Name" xml:space="preserve">
+    <value>divPB4</value>
+  </data>
+  <data name="&gt;&gt;divPB4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPB4.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;divPB4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner4Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner4Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 35</value>
+  </data>
+  <data name="Summoner4Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner4Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner4Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Summoner4Spell2.Name" xml:space="preserve">
+    <value>Summoner4Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner4Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner4Spell2.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;Summoner4Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Summoner4Spell1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner4Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 5</value>
+  </data>
+  <data name="Summoner4Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner4Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner4Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Summoner4Spell1.Name" xml:space="preserve">
+    <value>Summoner4Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner4Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner4Spell1.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;Summoner4Spell1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="TeamMatePictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -857,6 +1535,9 @@
   </data>
   <data name="TeamMatePictureBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -871,7 +1552,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="Summoner4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -883,7 +1564,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner4.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -904,7 +1585,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;Summoner4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>73, 261</value>
@@ -925,7 +1606,97 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
+  </data>
+  <data name="panel9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="DivString7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DivString7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString7.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="DivString7.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString7.Name" xml:space="preserve">
+    <value>DivString7</value>
+  </data>
+  <data name="&gt;&gt;DivString7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString7.Parent" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;DivString7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPB7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="divPB7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPB7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPB7.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPB7.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;divPB7.Name" xml:space="preserve">
+    <value>divPB7</value>
+  </data>
+  <data name="&gt;&gt;divPB7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPB7.Parent" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;divPB7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner7Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner7Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 36</value>
+  </data>
+  <data name="Summoner7Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner7Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner7Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;Summoner7Spell2.Name" xml:space="preserve">
+    <value>Summoner7Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner7Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner7Spell2.Parent" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;Summoner7Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="TeamMatePictureBox6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -935,6 +1706,9 @@
   </data>
   <data name="TeamMatePictureBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox6.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -949,7 +1723,34 @@
     <value>panel9</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox6.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
+  </data>
+  <data name="Summoner7Spell1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner7Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 6</value>
+  </data>
+  <data name="Summoner7Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner7Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner7Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;Summoner7Spell1.Name" xml:space="preserve">
+    <value>Summoner7Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner7Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner7Spell1.Parent" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;Summoner7Spell1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="Summoner7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -961,7 +1762,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner7.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -982,7 +1783,7 @@
     <value>panel9</value>
   </data>
   <data name="&gt;&gt;Summoner7.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
     <value>536, 105</value>
@@ -1003,7 +1804,121 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
+  </data>
+  <data name="DivString3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DivString3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString3.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="DivString3.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString3.Name" xml:space="preserve">
+    <value>DivString3</value>
+  </data>
+  <data name="&gt;&gt;DivString3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString3.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;DivString3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPB3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="divPB3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPB3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPB3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPB3.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;divPB3.Name" xml:space="preserve">
+    <value>divPB3</value>
+  </data>
+  <data name="&gt;&gt;divPB3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPB3.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;divPB3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner3Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner3Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 35</value>
+  </data>
+  <data name="Summoner3Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner3Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner3Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Summoner3Spell2.Name" xml:space="preserve">
+    <value>Summoner3Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner3Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner3Spell2.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;Summoner3Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Summoner3Spell1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner3Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 5</value>
+  </data>
+  <data name="Summoner3Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner3Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner3Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Summoner3Spell1.Name" xml:space="preserve">
+    <value>Summoner3Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner3Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner3Spell1.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;Summoner3Spell1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="TeamMatePictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1013,6 +1928,9 @@
   </data>
   <data name="TeamMatePictureBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1027,7 +1945,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="Summoner3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1039,7 +1957,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner3.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -1060,7 +1978,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;Summoner3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>73, 183</value>
@@ -1081,7 +1999,124 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
+  </data>
+  <data name="panel10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="DivString6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DivString6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString6.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="DivString6.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString6.Name" xml:space="preserve">
+    <value>DivString6</value>
+  </data>
+  <data name="&gt;&gt;DivString6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString6.Parent" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;DivString6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPB6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="divPB6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPB6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPB6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPB6.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;divPB6.Name" xml:space="preserve">
+    <value>divPB6</value>
+  </data>
+  <data name="&gt;&gt;divPB6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPB6.Parent" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;divPB6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner6Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner6Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 39</value>
+  </data>
+  <data name="Summoner6Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner6Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner6Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Summoner6Spell2.Name" xml:space="preserve">
+    <value>Summoner6Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner6Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner6Spell2.Parent" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;Summoner6Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Summoner6Spell1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner6Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 9</value>
+  </data>
+  <data name="Summoner6Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner6Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner6Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Summoner6Spell1.Name" xml:space="preserve">
+    <value>Summoner6Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner6Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner6Spell1.Parent" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;Summoner6Spell1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="TeamMatePictureBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1091,6 +2126,9 @@
   </data>
   <data name="TeamMatePictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox5.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1105,7 +2143,7 @@
     <value>panel10</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="Summoner6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1117,7 +2155,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner6.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -1138,7 +2176,7 @@
     <value>panel10</value>
   </data>
   <data name="&gt;&gt;Summoner6.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel10.Location" type="System.Drawing.Point, System.Drawing">
     <value>536, 27</value>
@@ -1159,7 +2197,121 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
+  </data>
+  <data name="DivString2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DivString2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString2.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="DivString2.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString2.Name" xml:space="preserve">
+    <value>DivString2</value>
+  </data>
+  <data name="&gt;&gt;DivString2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;DivString2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPB2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="divPB2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPB2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPB2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPB2.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;divPB2.Name" xml:space="preserve">
+    <value>divPB2</value>
+  </data>
+  <data name="&gt;&gt;divPB2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPB2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;divPB2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner2Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner2Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 36</value>
+  </data>
+  <data name="Summoner2Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner2Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner2Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Summoner2Spell2.Name" xml:space="preserve">
+    <value>Summoner2Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner2Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner2Spell2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;Summoner2Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Summoner2Spell1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner2Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 6</value>
+  </data>
+  <data name="Summoner2Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner2Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner2Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Summoner2Spell1.Name" xml:space="preserve">
+    <value>Summoner2Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner2Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner2Spell1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;Summoner2Spell1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="TeamMatePictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1169,6 +2321,9 @@
   </data>
   <data name="TeamMatePictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1183,7 +2338,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="Summoner2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1195,7 +2350,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner2.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -1216,7 +2371,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;Summoner2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>73, 105</value>
@@ -1237,7 +2392,112 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
+  </data>
+  <data name="DivString1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DivString1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DivString1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 45</value>
+  </data>
+  <data name="DivString1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 15</value>
+  </data>
+  <data name="DivString1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="DivString1.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;DivString1.Name" xml:space="preserve">
+    <value>DivString1</value>
+  </data>
+  <data name="&gt;&gt;DivString1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivString1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;DivString1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divPb1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="divPb1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="divPb1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="divPb1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;divPb1.Name" xml:space="preserve">
+    <value>divPb1</value>
+  </data>
+  <data name="&gt;&gt;divPb1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divPb1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;divPb1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Summoner1Spell2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Summoner1Spell2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 38</value>
+  </data>
+  <data name="Summoner1Spell2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner1Spell2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner1Spell2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;Summoner1Spell2.Name" xml:space="preserve">
+    <value>Summoner1Spell2</value>
+  </data>
+  <data name="&gt;&gt;Summoner1Spell2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner1Spell2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;Summoner1Spell2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Summoner1Spell1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 8</value>
+  </data>
+  <data name="Summoner1Spell1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Summoner1Spell1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Summoner1Spell1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;Summoner1Spell1.Name" xml:space="preserve">
+    <value>Summoner1Spell1</value>
+  </data>
+  <data name="&gt;&gt;Summoner1Spell1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Summoner1Spell1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;Summoner1Spell1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="TeamMatePictureBox0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1247,6 +2507,9 @@
   </data>
   <data name="TeamMatePictureBox0.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="TeamMatePictureBox0.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="TeamMatePictureBox0.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1261,7 +2524,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;TeamMatePictureBox0.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="Summoner1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1273,7 +2536,7 @@
     <value>NoControl</value>
   </data>
   <data name="Summoner1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 5</value>
+    <value>157, 5</value>
   </data>
   <data name="Summoner1.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -1294,7 +2557,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Summoner1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>73, 27</value>
@@ -1315,7 +2578,10 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
+  </data>
+  <data name="metroButton1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="metroButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>879, 454</value>
@@ -1339,7 +2605,7 @@
     <value>FIVEvsFIVEpanel</value>
   </data>
   <data name="&gt;&gt;metroButton1.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="FIVEvsFIVEpanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1365,6 +2631,237 @@
   <data name="&gt;&gt;FIVEvsFIVEpanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="avgMinionsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="avgMinionsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="avgMinionsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="avgMinionsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 202</value>
+  </data>
+  <data name="avgMinionsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="avgMinionsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="avgMinionsLabel.Text" xml:space="preserve">
+    <value>W/L (winrate)</value>
+  </data>
+  <data name="&gt;&gt;avgMinionsLabel.Name" xml:space="preserve">
+    <value>avgMinionsLabel</value>
+  </data>
+  <data name="&gt;&gt;avgMinionsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;avgMinionsLabel.Parent" xml:space="preserve">
+    <value>SummonerInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;avgMinionsLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 202</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 23</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Minions killed</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>SummonerInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="avgPentakillsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="avgPentakillsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="avgPentakillsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="avgPentakillsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 179</value>
+  </data>
+  <data name="avgPentakillsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="avgPentakillsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="avgPentakillsLabel.Text" xml:space="preserve">
+    <value>W/L (winrate)</value>
+  </data>
+  <data name="&gt;&gt;avgPentakillsLabel.Name" xml:space="preserve">
+    <value>avgPentakillsLabel</value>
+  </data>
+  <data name="&gt;&gt;avgPentakillsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;avgPentakillsLabel.Parent" xml:space="preserve">
+    <value>SummonerInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;avgPentakillsLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 179</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 23</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Total pentakills</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>SummonerInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="avgKDAlabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="avgKDAlabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="avgKDAlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="avgKDAlabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 156</value>
+  </data>
+  <data name="avgKDAlabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="avgKDAlabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="avgKDAlabel.Text" xml:space="preserve">
+    <value>W/L (winrate)</value>
+  </data>
+  <data name="&gt;&gt;avgKDAlabel.Name" xml:space="preserve">
+    <value>avgKDAlabel</value>
+  </data>
+  <data name="&gt;&gt;avgKDAlabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;avgKDAlabel.Parent" xml:space="preserve">
+    <value>SummonerInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;avgKDAlabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.75pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 156</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 23</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>KDA</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>SummonerInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="avgStatsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="avgStatsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt</value>
+  </data>
+  <data name="avgStatsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="avgStatsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 103</value>
+  </data>
+  <data name="avgStatsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 30</value>
+  </data>
+  <data name="avgStatsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="avgStatsLabel.Text" xml:space="preserve">
+    <value>Avarage Statistics</value>
+  </data>
+  <data name="&gt;&gt;avgStatsLabel.Name" xml:space="preserve">
+    <value>avgStatsLabel</value>
+  </data>
+  <data name="&gt;&gt;avgStatsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;avgStatsLabel.Parent" xml:space="preserve">
+    <value>SummonerInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;avgStatsLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="resource.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -1384,7 +2881,7 @@
     <value>False</value>
   </data>
   <data name="ChampionSearchTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 9</value>
+    <value>279, 23</value>
   </data>
   <data name="ChampionSearchTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>147, 23</value>
@@ -1402,7 +2899,10 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;ChampionSearchTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>9</value>
+  </data>
+  <data name="DivisionLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
   </data>
   <data name="DivisionLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1438,7 +2938,10 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;DivisionLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>10</value>
+  </data>
+  <data name="DivisionPictureBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
   </data>
   <data name="DivisionPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1462,106 +2965,7 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;DivisionPictureBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="AssistNumbLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="AssistNumbLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="AssistNumbLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="AssistNumbLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 170</value>
-  </data>
-  <data name="AssistNumbLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="AssistNumbLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="AssistNumbLabel.Text" xml:space="preserve">
-    <value>Assists: </value>
-  </data>
-  <data name="&gt;&gt;AssistNumbLabel.Name" xml:space="preserve">
-    <value>AssistNumbLabel</value>
-  </data>
-  <data name="&gt;&gt;AssistNumbLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AssistNumbLabel.Parent" xml:space="preserve">
-    <value>SummonerInfoPanel</value>
-  </data>
-  <data name="&gt;&gt;AssistNumbLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="DeathsNumbLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="DeathsNumbLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="DeathsNumbLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="DeathsNumbLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 147</value>
-  </data>
-  <data name="DeathsNumbLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 21</value>
-  </data>
-  <data name="DeathsNumbLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="DeathsNumbLabel.Text" xml:space="preserve">
-    <value>Deaths: </value>
-  </data>
-  <data name="&gt;&gt;DeathsNumbLabel.Name" xml:space="preserve">
-    <value>DeathsNumbLabel</value>
-  </data>
-  <data name="&gt;&gt;DeathsNumbLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DeathsNumbLabel.Parent" xml:space="preserve">
-    <value>SummonerInfoPanel</value>
-  </data>
-  <data name="&gt;&gt;DeathsNumbLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="KillNumbLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="KillNumbLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="KillNumbLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="KillNumbLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 125</value>
-  </data>
-  <data name="KillNumbLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 21</value>
-  </data>
-  <data name="KillNumbLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="KillNumbLabel.Text" xml:space="preserve">
-    <value>Kills: </value>
-  </data>
-  <data name="&gt;&gt;KillNumbLabel.Name" xml:space="preserve">
-    <value>KillNumbLabel</value>
-  </data>
-  <data name="&gt;&gt;KillNumbLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KillNumbLabel.Parent" xml:space="preserve">
-    <value>SummonerInfoPanel</value>
-  </data>
-  <data name="&gt;&gt;KillNumbLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="WLlabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1573,16 +2977,16 @@
     <value>NoControl</value>
   </data>
   <data name="WLlabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 102</value>
+    <value>146, 133</value>
   </data>
   <data name="WLlabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 23</value>
+    <value>112, 23</value>
   </data>
   <data name="WLlabel.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="WLlabel.Text" xml:space="preserve">
-    <value>W/L</value>
+    <value>W/L (winrate)</value>
   </data>
   <data name="&gt;&gt;WLlabel.Name" xml:space="preserve">
     <value>WLlabel</value>
@@ -1594,106 +2998,7 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;WLlabel.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="AssistsLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="AssistsLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="AssistsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="AssistsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 170</value>
-  </data>
-  <data name="AssistsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="AssistsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="AssistsLabel.Text" xml:space="preserve">
-    <value>Assists: </value>
-  </data>
-  <data name="&gt;&gt;AssistsLabel.Name" xml:space="preserve">
-    <value>AssistsLabel</value>
-  </data>
-  <data name="&gt;&gt;AssistsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AssistsLabel.Parent" xml:space="preserve">
-    <value>SummonerInfoPanel</value>
-  </data>
-  <data name="&gt;&gt;AssistsLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="DeathsLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="DeathsLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="DeathsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="DeathsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 147</value>
-  </data>
-  <data name="DeathsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 21</value>
-  </data>
-  <data name="DeathsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="DeathsLabel.Text" xml:space="preserve">
-    <value>Deaths: </value>
-  </data>
-  <data name="&gt;&gt;DeathsLabel.Name" xml:space="preserve">
-    <value>DeathsLabel</value>
-  </data>
-  <data name="&gt;&gt;DeathsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DeathsLabel.Parent" xml:space="preserve">
-    <value>SummonerInfoPanel</value>
-  </data>
-  <data name="&gt;&gt;DeathsLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="KillsLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="KillsLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="KillsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="KillsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 125</value>
-  </data>
-  <data name="KillsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 21</value>
-  </data>
-  <data name="KillsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="KillsLabel.Text" xml:space="preserve">
-    <value>Kills: </value>
-  </data>
-  <data name="&gt;&gt;KillsLabel.Name" xml:space="preserve">
-    <value>KillsLabel</value>
-  </data>
-  <data name="&gt;&gt;KillsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KillsLabel.Parent" xml:space="preserve">
-    <value>SummonerInfoPanel</value>
-  </data>
-  <data name="&gt;&gt;KillsLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="WinLoseLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1705,7 +3010,7 @@
     <value>NoControl</value>
   </data>
   <data name="WinLoseLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 102</value>
+    <value>14, 133</value>
   </data>
   <data name="WinLoseLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 23</value>
@@ -1726,7 +3031,7 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;WinLoseLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="levelLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1759,16 +3064,19 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;levelLabel.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
+  </data>
+  <data name="ChampionsInfoGrid.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="ChampionsInfoGrid.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11px</value>
   </data>
   <data name="ChampionsInfoGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 38</value>
+    <value>279, 52</value>
   </data>
   <data name="ChampionsInfoGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>647, 410</value>
+    <value>647, 396</value>
   </data>
   <data name="ChampionsInfoGrid.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1783,10 +3091,13 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;ChampionsInfoGrid.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
+  </data>
+  <data name="backButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="backButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>882, 454</value>
+    <value>879, 454</value>
   </data>
   <data name="backButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 23</value>
@@ -1807,7 +3118,7 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;backButton.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="SummonerIconPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1817,6 +3128,9 @@
   </data>
   <data name="SummonerIconPictureBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
+  </data>
+  <data name="SummonerIconPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="SummonerIconPictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1831,7 +3145,7 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;SummonerIconPictureBox.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="SummonerNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1864,7 +3178,7 @@
     <value>SummonerInfoPanel</value>
   </data>
   <data name="&gt;&gt;SummonerNameLabel.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="SummonerInfoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1890,6 +3204,197 @@
   <data name="&gt;&gt;SummonerInfoPanel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="SettingsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="SettingsButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAI71JREFUeF7t
+        3Yt1FMfWBtAbAiEoBDIwGVgZmAysDEwGVxmYDEwGJgPIADKADO7/HXXNz2skzaN7pqp777V6LYNBSFVn
+        +pyuV/8HGMf//ve/l7l+a9efuf5q139z/fvM9SHXsfZ9nbp2/25d9X3svqe6XrRvFwB4SpLmTa7fc+2S
+        6j+5dsn2S65R7X6Gv3PtfrYqEm7ajw4A25Ik+KIlxE+5tqgKmyp0fm9NAgDrlqRXiZ9vqgi6bc0DAOuS
+        JFdz+KfMxW9FjQhYQwDAeiSxVfIfeT7/UqpAUgQAML4ktFrkJ/kfThEAwPhaQuM4f7fmA4DxJJG9mfIZ
+        J7AwEIDxJIHVVj9D/6f71JoSAMaRBHY35THO8Lo1JwCMIcnL3P/53rbmBID+JXHV8D/n+9KaFAD6l8T1
+        aspfzOBla1YA6FuS1uspdzGDV61ZAaBvSVq2/83HdkAAxpCkpQCYjxEAAMaQpKUAmI8CAIAxJGkpAOaj
+        AABgDElaCoD5KAAAGEOSlgJgPgoAAMaQpKUAmI8CAIAxJGndT7mLGSgAABhDktb7KXcxgzetWQGgb0la
+        XgQ0HwUAAGNoiYt5KAAAGENLXMzjfWtWAOhXEpY3Ac5LAQBA/5Kw7qa8xUy+tKYFgH4lYb2d8hYzumnN
+        CwB9SrKyBXB+zgIAoF9JVC+mfMXM7AQAoF9JVLdTvmJm71oTA0B/kqgcAbwMCwEB6FcS1acpX7GAl62Z
+        AaAfSVA3U55iIdYBANCfJCjD/8v60JoaAPqRBGX4f3nOAwCgH0lML6f8xMLuWpMDwPUlMTn97zJMAwDQ
+        hySlOvzny0N64hJMAwBwfUlIXv5zWfet6QHgepKQLP67rBptedGaHwAuL4no9UNK4tJety4AgMtLIvL0
+        fx2fWhcAwGUlCZn7vy6jAABcVpKPlf/XZxQAgMtK8nHsbx8cDATAZSTpOPWvH3YEAHAZSTgfHlIPvXjb
+        ugYAlpFk82bKOXTmVesigHXIje23dr1sv8WVVJLJRZ9qVMZUADCu3MR+z/V3rsf2l9ecZ/3/39tf4QLS
+        3rXq357/vjkiGBhPbl63uY5NMPXn/2hfggWlnf95aHF6d9u6jAtKu9fC2L9y/TfXv99d9bDyRy4vcIKf
+        5YNRT5b1QTlHDX/6gC0kbWvefxx2BVxItXOuSvqHPrjUfcoDC5R8GKpqnuswmfo61gnMLG3qrP/xWA+w
+        sLRvPdWfeu+q/nGvYrvyAajEMlfy31EEzKja8qFVGdHfrRuZWbXt1MRn+7N9SdiOBH4Nmy1FETCDasPW
+        lozrTetOZpD2nGO68mcKNbYhwV4foLmq56dU4vKilBOl7ST/9fA5mEHase5dNXS/hCoqTNmwXhXguZb6
+        AD3Gze9IaTPJf318Ds6Q9rvEvcu6ANapAjvXtZKKm9+B0la1FVPyXyefgxOk3S754FKfPUUA65GAXmKx
+        37H+274dHpE2stp//RQBR0h7XWPUsugnxpdArkMxelEfZGcF7JF26amfWNZfrdt5QtqpRi2vefKlfmJM
+        Cd6qnHs8Oa5GIrw0pUlbVD/NvaqZ/ll5/oS0Tw+jlqUWTFscyDgqYHNdY9jsGPXEu+kPVn7+erGP+f7t
+        MiK2R9rkEruUjlH9pAigfxWoLWBHUMN7mzs3PT9z9ZEhf4oRsSbtcJOr13tX3assDqRfFaAtUEdTQ+Cb
+        eBLKz1lP/SP2Ecva9IhYfvY6mKz30bD6/hQB9KcCswXoyOomsMpCoH6uXN7mx1OqMNzUaED9vO3nHoUi
+        gL5UQLbAXIuaA1xFIZCfo4b7e5vTpG+rHw2ony/XqJ8LRQB9SCCueSHZsIVAfd+56ka+1r5hWRU3q9uG
+        lp+pPhf1uR79c1Hf/+bWL9GRBOBWDo6phUF/5ur+qSjfY43GeOJnLjU8Pvz76/Mz7BL/2jgwiMurwJvi
+        b3NqHr3eA95NMZDvpW5utX7B4j6WUrE1RBH8vXy/v+dae0GsCOByKuCmuNu82j1Qife31jQXU/9m+7dH
+        2XLJOtTQc00tdTsHXd9b+x63VBArAlheAq0+WOy3KwhqhKAS9CxPS/k6dUPbJXyn9tGLSrAVk1dfJ5Pv
+        oT4jNUKx5YJYEcByEmDmlo9XT0yVtOuq4qlumN9fVSz8/Hv15+rPG9JnFBWrdX+oeF68IMi/sUv4NSU3
+        +oK+OXl/APNLYL2Z4gvgWVUQ7EbEKlHXCNbRhUH7ezWPX1+nkr0RsOd5zwPzSUCZ8wfmVsP1u9Gxuqxn
+        mc9du33D6RJIkj/AeKwJ4HQVQFMcATAgRQDHq8CZ4geAgSkCOFwFzBQ3AAyudkl4dwDPq0BpAQPAOigC
+        eFoFSAsUANZFEcB+FRgtQABYJ0UAP6qAaIEBwLrVeQtDvdSJhVQg5HLkLMB2KAK2rgKgBQIA2/KhpQK2
+        KAHg5T4A2+W9AVuUjvdyHwC8N2BL0uEO+gFg57alB9YsHV0r/gFgx/bAtasObh0NAN+r3WB2BqxRdWwu
+        K/4BeIydAWuUjv136l8AeJSdAWtSHTr1KwA8y86ANaiOnPoTAA5mZ8DI0oFW/ANwCjsDRpbOs+gPgFPZ
+        GTCidJrDfgA4131LK4winWbVPwBzeNVSC71LZ91MfQYAZ3vb0gu9S2cZ/gdgTjctxdCzdNT91F8AMIvX
+        LcXQs3TU+6m/AGAWpgFGkI5SAAAwp/ctxdCz6qipvwBgFgqAEaSj3kz9BQCzUACMIB3l/H8A5qQAGEE6
+        yjsAAJiTEwFHkc76PPUZAJzNNsBRpLOsAwBgLl4KNIrqrFxGAQA4l/n/0aTTHAkMwLm8DGhE6bi3U/8B
+        wNE8/Y8sHagIAOBYX3N5CdDI0oG1HuBj9SYAHKCS/8uWRhhZOlIRAMChbPtbk3SoIgCA50j+a5SOVQQA
+        8BjJf83SwYoAAH4m+W9BOrqKgFrkAQCS/5akw700CAAv+tmidLzTAgG2y0E/W5YAcFAQwPbU+2K85Gfr
+        WiAAsA0O+mGSQHj1EBIAbIFFf3yTgLif4gKAFTPvz48SFLU10FQAwHp5wQ/7JTBuH0IEgDW6a7d7+FUC
+        5P0UJwCsyMd2m4f9EiQWBAKsj1X/PC+BYhQAYD3etts7PC3BYhQAYD0s/ONwCRijAADj8/TPcRI0RgEA
+        xveq3dbhcAmcj1P8ADAgh/5wmgTP3RRDAAzott3O4TgJnjodEIDxfG63cjhNgujdFEsADOS+3cbhNAki
+        xwMDjMfWP87XggmAMTj2l3kkmJwJADAOL/1hHhVMU0wBMADD/8wjwfRyiikAOmf1P/NKUH2dYguAjjn6
+        l3klqGwHBOjf63bbhnkkqN5MsQVAx8z/M68ElfMAAPpm/p/5JbC8HRCgb17+wzJagAHQJ8f/sowE1+cp
+        xgDokAOAWEaCy4mAAP161W7XMK8ElwIAoF92ALCMBNfbKcYA6E27VcP8El/OAgDoVLtVw/wSXwoAgE61
+        WzXML/GlAADok0OAWE4CTAEA0CeHALGcBJgCAKBPCgCWkwBTAAD0SQHAchJgCgCAPikAWE4CzDkAAJ1q
+        t2qYX+LLSYAAnWq3aphf4ksBANCpdquG+bUYA6BPL9rtGuZTgTXFFwCd8jZA5leBNcUXAJ163W7ZMJ8K
+        rCm+AOjUm3bLhvkksO6n+AKgU+/aLRvmk8D6MMUXAJ360G7ZMI8ElQWAAGOwE4D5JKBup7iC7n3OVedV
+        1KmVdXR1XbV+pRaxHnrd5dr93fo69fW+5oIR3LZbN5wvAWX+n958zPUuVyXpSto3LVwXlX/nZa4qiOvf
+        rX+/Cg7oyX0LVzhfAsr8P9dWT+G7ZN/VEGd9P7mqKKhCuQoTuCbrAJhHgulmiim4qHqyroQ63HBmvucq
+        CGraoaYPTB1wDdYBcL4EkuF/LmWX9F+28FuF+nnaz6UY4FIcCMT5EkifpniCRVRSXF3Sf0x+zpoq8Fpt
+        luY8AM6TIKr5VlhCzelv9iklP3tNE9RuA4sIWYppAE6XAPKkwtwqpi6yYn8UaY8qtL1qm7ndtRCD4yR4
+        6gnly0MYwXlqmL9W8Ev8T6j2yaXoZi52A3CaBE/dsOFcFUeGIo+Q9lIIMJdNrK1hZgkcT/+cw1D/mar9
+        cpka4BxvWzjBYRI0Xv3LqSpheeqYUdqz1ghYLMipFOIcJsFi7p9TVIJyBvmC0r61a8BZAhzL0cAcJsFi
+        7p9j1T5+8/wXkHY2LcApjALwtAqSKVbgIPXU/6qFDxeUdq8DhYwGcChrAXhaguSfKVbgWZ76r6zaP5fR
+        AA5lbQ77JTi8859D1FOnuf6OpD9qbQA8598WMvBNAsPCPw5Rr7r11N+h9Eu9cMhOAZ7jdEB+lKAw9M9z
+        rCTuXPrIlADPqQc9RTyTBIPhQ55SQ/5eLTqQ9JedPDzlnxYqbFkCwdv+eEolfwuHBpR+c5gXT1HUb1kC
+        oLb8mffnMTXfL/kPLP1XBb6tgjzG53uL0vE1V/jhIQTgVxb7rUT6sRYHKgLY51Mun/MtqQ7PJfnzGMl/
+        ZdKfdgjwGOsBtiQdLvnzmFpBLvmvUPVrriru4Gd/tzBhzaqjp/6GX7xvYcJKpY8VATzmTQsT1iada9if
+        pxj234jq51zWBLCPnQFrk06V/HmK5L8x6W8LA3mMImAt0pn1Qa+VnrCP5L9R6XdFAI9RBIyuOjGXff48
+        pm7+3hG+Yel/B4HxmP+2MGE01XlTH8JelfwdAsLuQQH2qXfEGCEcRTqrhvXM9/McQ3z8v8TD/RQW8IvK
+        J0YKe5dO+uuhu+Bp3urHLxIX3iLIY2oq+baFCj1Jx9Q8nqd+DmGvP3slNmq3kNMCeUpNLZsS6EE6ol7m
+        4z3+HKrm/X14eVTio6YQ4Sn1sPmqhQyXlsavSt1wP8fyoeVZiZM3U7jAk+pUWQ8Ul5LGrid+R/lyCvP+
+        HCzxYj0Ah6i1AX+0sGEJaeCa45f4OdXHFkpwkMRMPWw4JIhD1WFzCoG5pDFrmP/P1rBwDvv9OVrixvkA
+        HEshcKo0XFXdlfT/zQVz8IYvTpb4MRXAKWpqoNapOT/gMWmcesr/PVdtrbCNj7nVli6LdDhZ4sdUAOeq
+        nWp/5NruvSg/fH2QfstVVVHN50v4LM2qf86WOLIrgLnsioFxRwbyzdde2Urmu6uG7Suxf3/VD1pD+RI9
+        1/CuhSucLfHkgCDmVusF6mG4CoK+1ym1b7KSurfrMQJzb8wm8XQ7hRUsqh6YK8/uHqS/f9C+/BRC/tFK
+        /FbiMxIL/5hd4sqCQHpSD+M1yl5r6Got3XwFQn2x9sVhJI77ZRGJqzqPBHpWUwrnTSfUF8hlqJ8Refpn
+        MYkvowCMoKYRjp8GzV+qJ38L9xiRp38Wlfiq3UwwgoezCFroHiZ/wbA/o/L0z+ISZ2+ncIMh/N1C92n5
+        g46+ZFSe/rmIxJm1AIzmQwvfx+UPWe3PqLztj4tJvFkLwGgeHwnI/7TPlZHZ98/FJN7cLxnRXQvhH+V/
+        vJv+PwznbQtjuJjEndMBGU0tDPx1qrT9DxiRM/+5uMTd3RR+MJQfF0vnN2xtYVSfWxjDRSX2ass0jOZT
+        C+FJfsOqVka1f04LLiDxZ+qUEX1bM5VfeN0lo7L4j6tJ/FkMyIhetxBWADCsjy2E4WoSh3UGBYzk2zqA
+        /MLJVozI8D9Xlzh0/2Q0PxQADrVgRE7+4+oSh6YBGM23rdP5hQKA0bxv4QtXl3g0DcBIvt0/22/ASAz/
+        043Eo90AjEQBwNBetvCFq0s8epEaI5nOAsh/OMyC0Tj8h64kJh2mxlB2gesQIEbj7H+6k7j8OIUn9G8X
+        tAoARvPtEAvoROLSdkBGcqMAYETm/+lO4tI6AEbyqoLWG60Yydd2v4WuJDatA2AkDwWAY4AZif3/dCvx
+        6TwARvFaAcBofnyXNXQk8elQNUbxRgHAaCwApFuJz/spTKF7DwWAipWRWABItxKfFgIyCgUAY2n3WehS
+        QtSuKkbxTgHASJwASPdarELv3isAGIkdAHSvxSr0TgHAUBwBTPcSp+6pjEABwFBsAaR7iVP3VEbwUADA
+        KO7aPRa6lTi1FZARKAAYyqt2j4VuJU6drcIIFAAMRQFA9xKnCgBGoABgKAoAupc4dRgQI1AAMI52f4Wu
+        JVQdBsQIvigAGEa7v0LXEqoKAIagAGAY7f4KXUuoKgAYggKAYbT7K3QtoaoAYAgKAIbR7q/QtYSqAoAh
+        KAAYRru/QtcSqgoAhqAAYBjt/gpdS6gqABiCAoBhtPsrdC2hqgBgCBWsXlzBENr9FbqWUFUAMAQFACNx
+        EiDdS5zeTuEKfVMAMBIFAN1LnHoXAENQADASBQDdS5wqABjBVwUAI7lr91joVuJUAcAIHl4GpABgFG/a
+        PRa6lTh1T2UECgCGct/usdCtxKl7KiNQADCU9+0eC91qsQq9UwAwlE/tHgvdarEKvXsoACxYYRjtHgtd
+        Sog6BIhRvFUAMJqX7V4L3Ul8vp7CFLr3RgHAaG7bvRa6k/h0P2UUDwXA3fTfMARbAelW4tOaKkbxUACY
+        s2IkdgLQrcTnlylMoXuvFQCM5ku710JXEps3U4jCEF5V0L6c/huGYSEg3UlcWgDISKZ3q7RfwChePwQu
+        dCRxeT+FJwxBAcCQ3j4ELnQkcflhCk/oXwvbh8D9Ov0WDMGJgHQlMfliCk0YQwvdh+C1dYXRWAdANxKP
+        5v8ZSgtdBQBDumvhC1eXeHw7hSUM4dt26vzi3fR7MAznAdCNxKP9/4zkhwLA8ZWM6EULYbiaxOHtFI4w
+        jPsWvgoAhmU7IFeXODT8z2i+HameX1jAwojetRCGq0kcGv5nNN/WUOUXjrBkVKYBuJrEn+F/RjQdArST
+        3/g8/T4MxW4AribxZ/ifEd20EJ7kN6wDYEQOBeIqEnsO/2FEX1sIf5PfrGB2IiAj+nE4Cy4gcXc3hR8M
+        Zf9R6vkfFgMyIu8G4OISd5+m8IOhPP7AlP9pTosRWQzIxSTeXk1hB0P52EL4cflDigBG821fKyws8fbv
+        FHYwlMOmS/MHFQGMpPZiGwVgcYkz26YZ0bfT/w6Rv1BrAiwMZBROBmRxiTMPR4zm+aH/ffIXa3eAgGcE
+        tSjLKACLSXx5+mc0H3Odd1/MF6jAv89lRICeWQvAYhJfHoYYyXHD/ofIF60VsHVw0PtcVV1AL6wFYBGJ
+        K0//jKJO9r1toXsd+QaqUKirzsuugqFGEKpogCUZBWB2iSsr/+lZjc6/y9X/Wqh8ky9zVWFQQ2reQ8Cc
+        ahTgx7Ou4QyJJ/v+uYR6QK6rHpbrobmuypO7h+nvr/r9Wqj/8OsWqmPKD1DDa3W0phEC5uB0QGaTeHLq
+        H3OrXLdL8B5YdqoxclUxYH0B5/COAM6WOHLmP3OofFYJ333pUNVYuWpeA471oYURnCQxVA8jNaUEp6jp
+        7Ur6nvDPUQ2YyxYcjmVBICdL/PwzhREcpXLVyxZGzCWNqhDgWKpvjpa4qblZOFStwve0fwlp5JoasGCQ
+        Q5gK4CiJmToB1dA/h9glfuePXFoavRboOJ2Q55gK4GCJF0P/HELiv7bqgFwWCvIcc3I8K3Fi1T/PqdFn
+        Q/09SYf44PIULwviSYmPOqDM0D+PqdHm6x6xy+PSOfUBdn4Aj/mnhQr8ILFRI4kfHqIEflWjzB4geled
+        1DoL9rEegF8kLsz7s0899d+1MGEU6TTbBXmM07j4f4mHWswFP6vRZGuHRpXOq5clwM9qntcHG/cIHlML
+        /Qz5jy6d6APOPhYFblz636I/9vEysTVJhyoC2KcWfSkCNij9LvmzjzVCa5SOVQSwj5MCNyZ9bsU/+7xu
+        IcIaVQdP/Qw/+LuFCCuXvpb82Ufy34J0tN0B7KMIWLn0seTPPrb5bUk63DkB7KMIWKn0reTPPhb8bU06
+        vW4GTgxkn79zWRi4ItWfuSR/fib5b1U6v1YBe5Mg+1SyUASsQPrxpvUnfK8eAH3GtywBYFEgj1EEDC79
+        Z6sf+9SDn4PAeLhJWA/AY5wYOKj0WxX3kj/7eKMfkwRDzQ+aCuAxlUTcMAaS/vrzoefgV/ctTGCSoLib
+        YgMe9VcLFzqVPqpivhZxwj6fc5nW41cJjHr5AzylXhnrBtKh9EvN91vsx1O8BZT9KjimGIEn1UuE3Eg6
+        kv4w389zDP3ztASJUwI5lCmBK0sf1JB/jcrAU2qNl5E7npYgqT3DcKgacrZL4ArS7jViV6Mx8Bxv+OMw
+        CRajABzLaMCFpK099XOMzy104HkJGKMAnMLagIWlff/IZa6fY3jLH8dJ0BgF4FT1dHrTQokZpD1ruP/f
+        alw4gqd/jpfAsSOAc/2Vy8KjM6T9ajTOvn5O5TW/nCbB422BnKuGqxUCR0p7Sfycy8p/TpfgcTogc1EI
+        HCDtI/EzF/v+OV0CyGJA5laFwH9zWSPwnbRHneIn8TMn23M5T4LImwJZSiW831uobVJ+/lrVb3Efc7P4
+        j/MlkOqIUVhSbR+s6YFNjArk56yn/RoFsZ2PpVj8x/kSSHXoCFxKnSxYr7JdVTGQn2eX9J3cxyWYYmMe
+        CSa7AbiGKgZqZGDIucx837/nkvS5tI8tBOF8Caj7Ka7gamq4vA4YqtGBLguCfF+/5aqCxZw+1+Tcf+aT
+        gLqd4gq6Uom2nrCrKPithevi8m/VtFgl+/p3ayGjd/DTE8dxM58ElHUAjKJGCqowqNGCehqvq1baV8L+
+        /vrhPIL8ura8/vxnKsHvvkZ9TU/2dK+FNMwncWUdAEDf3rdbNswngeU8AIC+mf9nfhVYU3wB0KnbdsuG
+        +SSwHAgE0DcLAJlfBdYUXwD0qN2uYV6JLTsBAPr1td2uYX4tyADojx0ALKcFGQD9eddu1TC/FmQA9McW
+        QJaTAHs/xRkAnVEAsJwEmAIAoE8KAJaTAFMAAPRJAcByEmAKAIA+KQBYTgLs0xRnAHRGAcByWpAB0B8F
+        AMtpQQZAfxQALKcFGQD9UQCwjATXzRRjAHTISYAsI8HlbYAA/fIuAJaR4LqbYgyADn1ot2uYV4Lrfoox
+        AHrUbtcwr8SWQ4AA+vay3bJhPgmsL1N8AdCpV+2WDfNIUNkBANA/WwGZV4Lq9RRbAHTsbbttwzwqqKbY
+        AqBjn9ptG+ZRQTXFFgCdsxCQeSSYzP8DjOOu3b7hPBVMU0wBMABHAjOPBNOHKaYAGMCXdvuG0yWQDP8D
+        jOe23cbhNAkix/8CjMd2QM6TILL6H2BML9qtHI6T4LmdYgiAAb1ut3M4ToLn3ymGABiQ1wNzvATOqyl+
+        ABiYQ4E4ToLG0z/A+CwG5HAJmJdT3ACwAjft9g5PS7B48Q/AehgF4HkJFE//AOvzqt3mYb8EiWN/Adbn
+        33abh18lQN5McQLAChkF4FcJjDrz/8tDiACwRnWyq9MB+VGCwrY/gPW7b7d9eEj+3vcPsB2mAnhI/lb9
+        A2yLI4K3LkHwIpe3/QFsz98tFbBFCQDz/gDb5W2BW5SOv5/6H4AN87KgLUmHv576HYCNq+3ftgZuQTpa
+        8gfge3UCrCJgzdLBkj8A+ygC1iodK/kD8BRFwNqkQyV/AA6hCFiLdKSDfgA4hiJgdOlAL/gB4BQOChpZ
+        OtBBPwCcShEwonTcq6n/AOBkTgscTTqt5nAA4Bz1vhjrAUaRzqq5fwCYw5uWXuhdOsu2PwDm8qmlF3qX
+        zno79RkAzMJLg0aQjno/9RcAzOKupRh6lo5SAAAwJ+sARpCOUgAAMKf3LcXQs+qoqb8AYBYKgBGkoywC
+        BGBOCoARpKNsAwRgTtYAjCAd5SAgAObkSOBRpLNMAwAwl5uWXuhdOsvLgACYg/n/0aTT7qe+A4CTGf4f
+        TTrtRa7PD90HAMf72FIKo0nnvcz19aEbAeA43gEwsnTg7dSPAHAwQ/9rkI68m/oTAJ71tqUP1qA6dOpX
+        AHiUVf9rlI79OPUvAPyicsSLljJYk+rYXHYGAPCzWjDuwJ81SwfbGQDA9yonWPG/BeloOwMA2LHif0vS
+        4XYGAHDX0gJbko63MwBgu2z327IEgJ0BANvjmN+tSxDUzgBFAMB22O7HpAKhBQQA62bFPz+qgGiBAcA6
+        Sf7sV4HRAgSAdZH8eVoFSAsUANZB8ucwFSgPIQPAGkj+HC4B83qKGwAG5pQ/jleBM8UPAAOS/DldBdAU
+        RwAMRPLnfAmkN1M8MYP3P13OXwDmJvkznwSU9wY8rxJ6tVMVTPXGxVet+Q6Wv3NTfy9Xvaypvk59zc+5
+        AA4h+TO/BJaRgG9qW827XJWoF19hm3+jCoOajqkCQ0HAKCpWq4i9z1X3j++vKpJ3he73V32u6u/Yjny8
+        +3bLgPklwLa8JqCG6y+S8J+T76EKgrqpKgboRSXtSuA1gnXTQvVs7evVfae+dv0b7Oe1viwvgbalIqAS
+        bCXa2W5oc8v3Vuc21MiAJyYuaVcQHz3Vda76N3MpCL4x7M/lVMBNcbdalVAvfmM7R77feqlT3RSNCrCU
+        iq1K+l0VxPl+6n5UUwdbJPlzeRV4U/ytSiX+bp/2D5WfofpGIcBc6nPR/Wly+R6rCK4CZQu7a2rET/Ln
+        eioAH0JxbPVBqifn4RP/z9rPZWqAU1TcdD399ZT6vnNV4bJG1TeO9+X6KhBbQI6obhAv2o+ySvXztZ8T
+        DlWJfxWfi/wcaysEJH/6UgHZAnMUNUQ41Bz/uernzWVagKdUolzdSFipnytXjYiNTPKnTxWYLUB7Vt/f
+        m/Ytb05+9hoNqKc7+F4VhpsoiPNzViEw4u6BemiR/OlXBWiuXp8y6wO0yqebY6Ud6hCWkUZsWM5qhvuP
+        kZ95pM9A3bs210cMqAK1BWxPnJD1k7RJPQn11k9cTiW/TU2D/Sw//wgjYpI/Y6mAzdXDwpu6ydkq84i0
+        jQWC21RD4JJKk7ao9TE9jgbUZ1M/MaYE7zWr66qczZkdIO1kXcB2bHYNzFPSLr2NiOknxpdAvsZZAYbN
+        jpT2WuPBTvzIaNgz0kbXHhEzasm6JKAvOcQm+Z8o7aYIWKfNz/cfI211rc9B9ZNRS9anAjvX0jsEJP8z
+        pf0UAesiqZwgbXbpz4F7F+tWAd4CfQk+QDNJOyoC1kHyP0Pa7lKfA4v92I4W8HOqN4H5AM0o7Tn6qWlb
+        J/nPIG249HkBFvuxPRX4U/yf7W37ksys2nZqYgYj+c+o2rK16Zzq61nsx3blA3DO+fQ+QAtL+/Z4qBPP
+        87mYWdp0ziJAgQY7+TDUXNuhhUD9uRo9MOR/AdXOueZ++mE5hpQXkrad46wA05WwTz4YVWXftQ9JnVa2
+        u2ooupK+qvkK0u41D0r/TIddQNr5mAeWnfrzt+1LAIwjNy+nBfatEownywtKe1dhXA8nj42QVZ/U/3cG
+        AzCu3MRqKuDYpx4ux+jYlVUf5Kp1TfoCWJd2c6M/d62LAGAZSTa2BvblfesaAFhOEo5dAX0x3AzAZSTp
+        OCWwD7b8AXBZST4WBF6XVf8AXF6SjxcGXZfT/gC4jiQhowDX8bl1AQBcXhJRndrI5Xn6B+B6kojsCLg8
+        T/8AXF8SknMBLsvTPwDXl4RUb0jjMmq0xcp/APqQpHTuK1I5zH1rcgC4viQmiwEv46Y1OQBcXyWmKT+x
+        oI+tuQGgH5WgpjzFQrzxD4D+JEF5P8CyDP8D0J8kqFdTnmIBhv8B6FcSlUOBlmH1PwD9SqJ6N+UrZnbb
+        mhgA+pNEZR3AAlrzAkCfkqtup5TFjN635gWAPiVZOQ9gfub/AehfS1rMx8t/AOhfEtb7KW8xk1etaQGg
+        X0lYCoAZtWYFgL4lZ91PqYs5tGYFgL4lZ9kKOB87AAAYQ5KWAmA+CgAAxpCk9XrKXczAFkAAxpCk5aVA
+        83nTmhUA+pakpQCYjwIAgDEkaSkA5qMAAGAMSVoKgPkoAAAYQ5KWAmA+CgAAxpCkZRfAfBQAAIwhScsr
+        geejAABgDElapgDmc9uaFQD6lqSlAJiPNwECMI4krq9T/uJML1qTAkD/krjeTfmLM3xszQkAY0jyshPg
+        fHetOQFgHElgn6c8xglqCsXwPwDjSQKzHfB0tv8BMK4ksrdTPuMI5v4BGFuS2YtKaA9pjUPU0P9Naz4A
+        GFcSmiLgMJX8X7ZmA4DxJbFVEWBr4OOqQJL8AVinJLk6JdDugB9Z8AfANiTp1Q6BGhHY6omBVQTd5bLV
+        D4BtShK8yVUjA2/aVTsH3rdrVJXgdz9D/Ty7n61+TkkfAA5RSbMlz91VT8+7pFpXjSbsEu7317FqLn7f
+        1/n+us+1+3frxMPd92T1PgzjP//5PxLtt5IX2mYkAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="SettingsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SettingsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>899, 9</value>
+  </data>
+  <data name="SettingsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="SettingsButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="SettingsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="SettingsButton.ToolTip" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;SettingsButton.Name" xml:space="preserve">
+    <value>SettingsButton</value>
+  </data>
+  <data name="&gt;&gt;SettingsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SettingsButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SettingsButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="TypeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1900,7 +3405,7 @@
     <value>NoControl</value>
   </data>
   <data name="TypeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>489, 23</value>
+    <value>488, 9</value>
   </data>
   <data name="TypeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 37</value>
@@ -1924,7 +3429,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TypeLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -8101,11 +9606,8 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 560</value>
-  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>960, 450</value>
+    <value>1000, 560</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>WindowsDefaultLocation</value>
@@ -8124,6 +9626,12 @@
   </data>
   <data name="&gt;&gt;emptyTextBoxControlTimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LoLToolTip.Name" xml:space="preserve">
+    <value>LoLToolTip</value>
+  </data>
+  <data name="&gt;&gt;LoLToolTip.Type" xml:space="preserve">
+    <value>MetroFramework.Components.MetroToolTip, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Main</value>

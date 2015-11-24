@@ -1,0 +1,30 @@
+000000.000|       0.0000kb|      0.0000kb added| ALWAYS| Logging started at 2015-10-30T19:46:13.688
+000000.004|       0.0000kb|      0.0000kb added| ALWAYS| Loading RADS dynamic library: C:\Riot Games\League of Legends\RADS\RiotRadsIO.dll
+000000.047|       0.0000kb|      0.0000kb added|   OKAY| Riot::RADS::Reader::RadsExportsMain::Initialize: RADS library initializing with specified working directory "C:\Users\bodah\Documents\GitHub\LoLAssistant\LoLAssistant\bin\Debug".
+000000.047|       0.0000kb|      0.0000kb added|   OKAY| Riot::RADS::Reader::RuntimeEnvironment::Create: Creating RADS runtime environment: RADS root directory = "C:/Users/bodah/Documents/GitHub/LoLAssistant/LoLAssistant/bin/Debug"
+000000.069|       0.0000kb|      0.0000kb added|   WARN| Riot::RADS::Reader::RuntimeEnvironment::GetProjectTypeNameAndVersion: Did not find keywords "projects" or "solutions" in path C:/Users/bodah/Documents/GitHub/LoLAssistant/LoLAssistant/bin/Debug
+000000.083|       0.0000kb|      0.0000kb added|  ERROR| Riot::RADS::Reader::RuntimeEnvironment::Create: RADS runtime environment creation failed because it was unable to get the project information.
+000000.083|       0.0000kb|      0.0000kb added|  ERROR| Riot::RADS::Reader::RadsExportsMain::Initialize: RADS library initialization failed to create the runtime environment.
+000000.090|       0.0000kb|      0.0000kb added|  ERROR| Failed to initialize Rads dynamic library: C:\Riot Games\League of Legends\RADS\RiotRadsIO.dll
+000000.369|       0.0000kb|      0.0000kb added|   OKAY| Riot::RADS::Reader::SignalSoftRepair: Wrote soft repair file to C:/Users/bodah/Documents/GitHub/LoLAssistant/LoLAssistant/bin/SOFT_REPAIR.
+000003.074|       0.0000kb|      0.0000kb added|   OKAY| Unable to process data overlay file ./ToolsConfig.xml, defaulting to overlay now
+000003.074|       0.0000kb|      0.0000kb added| ALWAYS| Data overlay start folder initialized to DATA, Content/Src
+000003.083|       0.0000kb|      0.0000kb added| ALWAYS| Global logging level set to   WARN
+000003.142|       0.0000kb|      0.0000kb added| ALWAYS| Build Version: Version 5.21.0.297 (Oct 26 2015/23:23:03) [PUBLIC] <Releases/5.21> ChangeList: 1236539
+000004.346|       0.0000kb|      0.0000kb added|  ERROR| Command line does not have correct number of parameters <3>
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| OS Version String: 10  Home, x64
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| CPU: GenuineIntel, Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz, Intel64 Family 6 Model 15 Stepping 11, 2400 (0 core)
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| Measured processor speed: 2384
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| Display info: NVIDIA GeForce GTX 460 1073741824 10.18.13.5354
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| Physical memory: 2147483648
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| {"messageType":"hardware_information","message_body":"Hardware Info","operating_system":"10  Home, x64","cpu":"GenuineIntel","cpu_processor":"Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz","cpu_identifier":"Intel64 Family 6 Model 15 Stepping 11","cpu_topology":4,"gpu":"NVIDIA GeForce GTX 460","video_memory":"1073741824","driver_version":"10.18.13.5354","physical_memory":2147483648,"wine":false}
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| -----HARDWARE INFORMATION START-----
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| Operating System: 10  Home, x64
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| GPU Manufacturer: NVIDIA GeForce GTX 460
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| GPU Memory: 1073741824
+000009.201|       0.0000kb|      0.0000kb added| ALWAYS| GPU Driver Version: 10.18.13.5354
+000009.202|       0.0000kb|      0.0000kb added| ALWAYS| CPU Brand: GenuineIntel
+000009.202|       0.0000kb|      0.0000kb added| ALWAYS| CPU Processor Name: Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz
+000009.202|       0.0000kb|      0.0000kb added| ALWAYS| CPU Identifier: Intel64 Family 6 Model 15 Stepping 11
+000009.202|       0.0000kb|      0.0000kb added| ALWAYS| CPU Speed: 2400
+000009.202|       0.0000kb|      

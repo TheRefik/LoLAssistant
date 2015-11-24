@@ -11,19 +11,31 @@ using MetroFramework.Forms;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json;
+using System.Diagnostics;
+using MetroFramework.Components;
+using MetroFramework;
+using LoLAssistant.Classes.LiveMatch;
+using LoLAssistant.Classes.Division;
+using LoLAssistant.Classes.Statistics;
+using LoLAssistant.Classes.Summoner;
+using LoLAssistant.Classes.SystemClass;
+using LoLAssistant.Classes;
 
 namespace LoLAssistant
 {
+
     public partial class Main : MetroForm
     {
-        string JSON;
+       public static string JSON;
         string apiKey = "491cc7eb-f482-4c30-b876-3a23b69267d4";
         string version;
         bool canBackToMatch = false;
         LiveMatch MatchInfo;
+        string Region;
         public Main()
         {
             InitializeComponent();
+            this.Style = StyleManager.Style;
             AllowTransparency = false;
             List<string> Regions = new List<string> { "EUNE", "EUW", "NA", "BR", "TR", "LAS", "LAN", "KR", "OCE", "RU" };   //SET REGIONS IN COMBOBOX
             regionsComboBox.DataSource = Regions;
@@ -101,8 +113,8 @@ namespace LoLAssistant
             loadingLabel.Visible = true;
             if (TextBoxSummonerName.Text == "")
             {
-                metroLabel1.Visible = true;
-                metroLabel1.Text = "Enter summoner name!";                            //CONTROL EMPTY TEXTOBX
+                MessageLabel.Visible = true;
+                MessageLabel.Text = "Enter summoner name!";                            //CONTROL EMPTY TEXTOBX
                 emptyTextBoxControlTimer.Enabled = true;
                 loadingLabel.Visible = false;
             }
@@ -111,80 +123,12 @@ namespace LoLAssistant
 
                 try
                 {
-                    WebClient client = new WebClient();
-                    Stream data = client.OpenRead("https://" + regionsComboBox.Text.ToLower() + ".api.pvp.net/api/lol/" + regionsComboBox.Text.ToLower() + "/v1.4/summoner/by-name/" + TextBoxSummonerName.Text + "?api_key=" + apiKey);
-                    StreamReader reader = new StreamReader(data);
-                    string str = reader.ReadLine();
-                    string SummonerName = TextBoxSummonerName.Text.ToLower();
-                    SummonerName = SummonerName.Replace(" ", string.Empty);
-                    str = str.Replace("{\"" + SummonerName + "\":", string.Empty);
-                    str = str.Replace("}}", "}");                                                              //GET CHAMPION ID
-                    SummonerInfo summonerInfo = JsonConvert.DeserializeObject<SummonerInfo>(str);
+                    Region = regionsComboBox.Text;
+                    SummonerInfo summonerInfo = GetSummoner.ReturnSummoner(TextBoxSummonerName.Text, regionsComboBox.Text, apiKey);
+                    MatchInfo = MatchSearch.GetMatch(regionsComboBox.Text, summonerInfo.id, apiKey);
+                    string[] Keys = MatchSearch.GetKeys(JSON, MatchInfo);
+                    string[] Names = MatchSearch.GetName(JSON, MatchInfo);
 
-
-                    string platform = string.Empty;
-                    #region SetPlatforms
-                    switch (regionsComboBox.Text)
-                    {
-                        case "EUNE":
-                            platform = "EUN1";
-                            break;
-                        case "EUW":
-                            platform = "EUW1";
-                            break;
-                        case "NA":
-                            platform = "NA1";
-                            break;
-                        case "BR":
-                            platform = "BR1";
-                            break;
-                        case "TR":
-                            platform = "TR1";
-                            break;
-                        case "LAS":
-                            platform = "LA2";
-                            break;
-                        case "LAN":
-                            platform = "LA1";
-                            break;
-                        case "KR":
-                            platform = "KR";
-                            break;
-                        case "OCE":
-                            platform = "OC1";
-                            break;
-                        case "RU":
-                            platform = "RU";
-                            break;
-                    }
-                    #endregion
-                    WebClient Matchclient = new WebClient();
-                    Stream Matchdata = Matchclient.OpenRead("https://" + regionsComboBox.Text.ToLower() + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + platform + "/" + summonerInfo.id + "?api_key=" + apiKey);
-                    StreamReader Matchreader = new StreamReader(Matchdata);
-                    string MatchResult = Matchreader.ReadLine();
-                    MatchInfo = JsonConvert.DeserializeObject<LiveMatch>(MatchResult);
-                    string JoinedKeys = "";
-                    int partCounter = 0;
-                    foreach (Participant part in MatchInfo.participants)
-                    {
-
-                        JoinedKeys += part.championId + ",";
-                        partCounter++;
-                    }
-                    if (MatchInfo.gameQueueConfigId == 4 || MatchInfo.gameQueueConfigId == 6 || MatchInfo.gameQueueConfigId == 9 || MatchInfo.gameQueueConfigId == 41 || MatchInfo.gameQueueConfigId == 42)
-                    {
-                        foreach (BannedChampion banchamp in MatchInfo.bannedChampions)
-                        {
-                            JoinedKeys += banchamp.championId + ",";
-                            partCounter++;
-                        }
-                    }
-
-                    JoinedKeys = JoinedKeys.Remove(JoinedKeys.Length - 1);
-                    string[] Keys = Transform.ReturnChampionKey(JSON, JoinedKeys, partCounter);
-
-                    
-                    #region ChampJPGtoPicturesBoxes
                     Summoner1.Text = MatchInfo.participants[0].summonerName;
                     Summoner2.Text = MatchInfo.participants[1].summonerName;
                     Summoner3.Text = MatchInfo.participants[2].summonerName;
@@ -197,42 +141,62 @@ namespace LoLAssistant
                     Summoner10.Text = MatchInfo.participants[9].summonerName;
                     //label1.Text = MatchInfo.participants[0].
 
-                    PictureBox[] pb = new PictureBox[10] { TeamMatePictureBox0 , TeamMatePictureBox1 , TeamMatePictureBox2, TeamMatePictureBox3 , TeamMatePictureBox4 , TeamMatePictureBox5 , TeamMatePictureBox6 , TeamMatePictureBox7 , TeamMatePictureBox8 , TeamMatePictureBox9 };
-                    
-                    for(int  i = 0; i < 10; i++)
+                    PictureBox[] pb = new PictureBox[10] { TeamMatePictureBox0, TeamMatePictureBox1, TeamMatePictureBox2, TeamMatePictureBox3, TeamMatePictureBox4, TeamMatePictureBox5, TeamMatePictureBox6, TeamMatePictureBox7, TeamMatePictureBox8, TeamMatePictureBox9 };
+
+                    for (int i = 0; i < 10; i++)
                     {
-                        var request = WebRequest.Create("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
-                        using (var response = request.GetResponse())
-                        using (var stream = response.GetResponseStream())
-                        {
-                            Image img = Image.FromStream(stream);
-                            Bitmap bmp = new Bitmap(img, new Size(64,64));
-                             pb[i].Image = bmp;
-                        }
+                        pb[i].Load("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
+                        LoLToolTip.SetToolTip(pb[i], Names[i]);
                     }
                     if (MatchInfo.gameQueueConfigId == 4 || MatchInfo.gameQueueConfigId == 6 || MatchInfo.gameQueueConfigId == 9 || MatchInfo.gameQueueConfigId == 41 || MatchInfo.gameQueueConfigId == 42)
                     {
                         PictureBox[] pbBans = new PictureBox[6] { banPB1, banPB2, banPB3, banPB4, banPB5, banPB6 };
                         for (int i = 10; i < Keys.Length; i++)
                         {
-                            var request = WebRequest.Create("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
-                            using (var response = request.GetResponse())
-                            using (var stream = response.GetResponseStream())
-                            {
-                                Image img = Image.FromStream(stream);
-                                Bitmap bmp = new Bitmap(img, new Size(32, 32));
-                                pbBans[i - 10].Image = bmp;
-                            }
+                            pbBans[i - 10].Load("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
+                            LoLToolTip.SetToolTip(pbBans[i-10], Names[i] );
                         }
                     }
+                    PictureBox[] summonerSpell_1 = new PictureBox[10] { Summoner1Spell1, Summoner2Spell1, Summoner3Spell1, Summoner4Spell1, Summoner5Spell1, Summoner6Spell1, Summoner7Spell1, Summoner8Spell1, Summoner9Spell1, Summoner10Spell1 };
+                    PictureBox[] summonerSpell_2 = new PictureBox[10] { Summoner1Spell2, Summoner2Spell2, Summoner3Spell2, Summoner4Spell2, Summoner5Spell2, Summoner6Spell2, Summoner7Spell2, Summoner8Spell2, Summoner9Spell2, Summoner10Spell2 };
+
+                    List<Spells> summonerSpell = SummonerSpells.GetSpells(regionsComboBox.Text, apiKey);
+
+                    int x = 0;
+                    string[] SummID = new string[10];
+                    foreach (Participant part in MatchInfo.participants)
+                    {
+                        SummID[x] = part.summonerId.ToString();
+                        foreach(var item in summonerSpell)
+                        {
+                            if(item.Id == part.spell1Id)
+                            {
+                                summonerSpell_1[x].Load("http://ddragon.leagueoflegends.com/cdn/5.22.3/img/spell/" + item.Key + ".png");
+                                LoLToolTip.SetToolTip((Control)summonerSpell_1[x], item.Name);
+                            }
+                            if(item.Id == part.spell2Id)
+                            {
+                                summonerSpell_2[x].Load("http://ddragon.leagueoflegends.com/cdn/5.22.3/img/spell/" + item.Key + ".png");
+                                LoLToolTip.SetToolTip((Control)summonerSpell_2[x], item.Name);
+                            }
+                        }
+                        x++;
+                    }
+
+
+                    PictureBox[] DivisionsPB = new PictureBox[10] { divPb1, divPB2, divPB3, divPB4, divPB5, divPB6, divPB7, divPB8, divPB9, divPB10 };
+                    Label[] divLabels = new Label[10] { DivString1, DivString2, DivString3, DivString4, DivString5, DivString6, DivString7, DivString8, DivString9, DivString10 };
+
+                    ReturnDivision divisionsImages = ReturnDivisionInfo.GetDivisions(Region, apiKey, SummID);
                     
 
 
-
-                    #endregion
-
-
-
+                    for(int i = 0; i < divisionsImages.divList.Count(); i++)
+                    {
+                        divLabels[i].Text = divisionsImages.divList[i].Division;
+                        DivisionsPB[i].Image = divisionsImages.image[i];
+                        LoLToolTip.SetToolTip((Control)DivisionsPB[i], divisionsImages.divList[i].Name);
+                    }
 
 
 
@@ -244,18 +208,19 @@ namespace LoLAssistant
                 }
                 catch (WebException ex)
                 {
+                    MessageBox.Show(ex.Message);
                     if (ex.Status == WebExceptionStatus.ProtocolError)
                     {
                         var response = (HttpWebResponse)ex.Response;
                         if (response.StatusCode == HttpStatusCode.NotFound)
                         {
-                            metroLabel1.Visible = true;
-                            metroLabel1.Text = "The summoner " + TextBoxSummonerName.Text + " is not currently in a game!";
+                            MessageLabel.Visible = true;
+                            MessageLabel.Text = "The summoner " + TextBoxSummonerName.Text + " is not currently in a game!";
                             emptyTextBoxControlTimer.Enabled = true;
                             loadingLabel.Visible = false;
                         }
                     }
-                    
+
                 }
             }
         }
@@ -266,8 +231,8 @@ namespace LoLAssistant
             loadingLabel.Visible = true;
             if (Summoner == "")
             {
-                metroLabel1.Visible = true;
-                metroLabel1.Text = "Enter summoner name!";                            //CONTROL EMPTY TEXTOBX
+                MessageLabel.Visible = true;
+                MessageLabel.Text = "Enter summoner name!";                            //CONTROL EMPTY TEXTOBX
                 emptyTextBoxControlTimer.Enabled = true;
                 loadingLabel.Visible = false;
             }
@@ -277,28 +242,13 @@ namespace LoLAssistant
                 try
                 {
                     #region GetSummonerAndIcon
-                    WebClient client = new WebClient();
-                    Stream data = client.OpenRead("https://" + regionsComboBox.Text.ToLower() + ".api.pvp.net/api/lol/" + regionsComboBox.Text.ToLower() + "/v1.4/summoner/by-name/" + Summoner + "?api_key=" + apiKey);
-                    StreamReader reader = new StreamReader(data);
-                    string str = reader.ReadLine();
 
-                    string SummonerName = Summoner.ToLower();
-                    SummonerName = SummonerName.Replace(" ", string.Empty);
-                    str = str.Replace("{\"" + SummonerName + "\":", string.Empty);
-                    str = str.Replace("}}", "}");                                                              //GET CHAMPION ID AND SET ICON TO PICTUREBOX
-                    SummonerInfo summonerInfo = JsonConvert.DeserializeObject<SummonerInfo>(str);
+                    SummonerInfo summonerInfo = GetSummoner.ReturnSummoner(Summoner, regionsComboBox.Text, apiKey);
+
+                    SummonerIconPictureBox.Image = ProfileIcon.ReturnIcon(summonerInfo.profileIconId.ToString(),version);
+
+
                     SummonerNameLabel.Text = summonerInfo.name;
-                    var request = WebRequest.Create("http://ddragon.leagueoflegends.com/cdn/5.19.1/img/profileicon/" + summonerInfo.profileIconId + ".png");
-
-                    using (var response = request.GetResponse())
-                    using (var stream = response.GetResponseStream())
-                    {
-                        Image img = Image.FromStream(stream);
-                        Bitmap bmp = new Bitmap(img, new Size(64, 64));
-                        SummonerIconPictureBox.Image = bmp;
-
-                    }
-
                     levelLabel.Text = "Level: " + summonerInfo.summonerLevel;
                     #endregion
 
@@ -313,14 +263,21 @@ namespace LoLAssistant
                     dt.Columns.Add("KDA");
                     dt.Columns.Add("Games played");
                     dt.Columns.Add("Wins");
+
+                    dt.Columns.Add("Minions");
+                    dt.Columns.Add("Golds");
                     dt.Columns.Add("Penta Kills");
                     dt.Columns.Add("Quadra Kills");
                     dt.Columns.Add("Triple Kills");
                     dt.Columns.Add("Double Kills");
+                    dt.Columns.Add("Max kills");
+                    dt.Columns.Add("Max deaths");
+                    dt.Columns.Add("Turrets destroyed");
+
                     if (summonerInfo.summonerLevel == 30)
                     {
                         WebClient statclient = new WebClient();
-                        Stream statdata = client.OpenRead("https://" + regionsComboBox.Text.ToLower() + ".api.pvp.net/api/lol/" + regionsComboBox.Text.ToLower() + "/v1.3/stats/by-summoner/" + summonerInfo.id + "/ranked?api_key=" + apiKey);
+                        Stream statdata = statclient.OpenRead("https://" + regionsComboBox.Text.ToLower() + ".api.pvp.net/api/lol/" + regionsComboBox.Text.ToLower() + "/v1.3/stats/by-summoner/" + summonerInfo.id + "/ranked?api_key=" + apiKey);
                         StreamReader statreader = new StreamReader(statdata);                //GET STATS
                         string result = statreader.ReadLine();
                         StatsInfo statsInfo = JsonConvert.DeserializeObject<StatsInfo>(result);   //DESERIALIZE JSON STRING
@@ -335,7 +292,7 @@ namespace LoLAssistant
                             {
                                 TotalStatus = champion;
                             }
-                            listChampions.Add(champion);
+                                listChampions.Add(champion);
                         }
                         listChampions.Sort(delegate (Champion c1, Champion c2) { return c2.stats.totalSessionsPlayed.CompareTo(c1.stats.totalSessionsPlayed); });
                         string joinedIDs = "";
@@ -347,7 +304,7 @@ namespace LoLAssistant
                         }
                         joinedIDs = joinedIDs.Remove(joinedIDs.Length - 1);
                         string[] Champions = Transform.ReturnChampion(JSON, joinedIDs, countChampion);
-                        version = ReturnVersion.returnVersion();
+                        version = Transform.returnVersion(JSON);
 
                         //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -361,33 +318,39 @@ namespace LoLAssistant
                                 float WonPercentage = ((float)listChampions[x].stats.totalSessionsWon / (float)listChampions[x].stats.totalSessionsPlayed) * 100;
                                 int wonPercToInt = (int)WonPercentage;
                                 dt.Rows.Add(Champions[x],
-                                Math.Round(listChampions[x].stats.totalChampionKills / listChampions[x].stats.totalSessionsPlayed) + "/" + Math.Round(listChampions[x].stats.totalDeathsPerSession / listChampions[x].stats.totalSessionsPlayed) + "/" + Math.Round(listChampions[x].stats.totalAssists / listChampions[x].stats.totalSessionsPlayed),
-                                listChampions[x].stats.totalSessionsPlayed,
-                                listChampions[x].stats.totalSessionsWon + " (" + wonPercToInt + "%)",
-                                listChampions[x].stats.totalPentaKills,
-                                listChampions[x].stats.totalQuadraKills,
-                                listChampions[x].stats.totalTripleKills,
-                                listChampions[x].stats.totalDoubleKills);
+                                            Math.Round(listChampions[x].stats.totalChampionKills / listChampions[x].stats.totalSessionsPlayed) + "/" + Math.Round(listChampions[x].stats.totalDeathsPerSession / listChampions[x].stats.totalSessionsPlayed) + "/" + Math.Round(listChampions[x].stats.totalAssists / listChampions[x].stats.totalSessionsPlayed),
+                                            listChampions[x].stats.totalSessionsPlayed,
+                                            listChampions[x].stats.totalSessionsWon + " (" + wonPercToInt + "%)",
+                                            listChampions[x].stats.totalMinionKills / listChampions[x].stats.totalSessionsPlayed,
+                                            listChampions[x].stats.totalGoldEarned / listChampions[x].stats.totalSessionsPlayed,
+                                            listChampions[x].stats.totalPentaKills,
+                                            listChampions[x].stats.totalQuadraKills,
+                                            listChampions[x].stats.totalTripleKills,
+                                            listChampions[x].stats.totalDoubleKills,
+                                            listChampions[x].stats.maxChampionsKilled,
+                                            listChampions[x].stats.maxNumDeaths,
+                                            listChampions[x].stats.totalTurretsKilled);
                             }
 
                             x++;
                         }
 
 
+                        float AvgWon = ((float)listChampions[0].stats.totalSessionsWon / (float)listChampions[0].stats.totalSessionsPlayed) * 100;
+                        int avgWonINT = (int)AvgWon;
 
 
-
-                        WLlabel.Text = (TotalStatus.stats.totalSessionsWon + "/" + TotalStatus.stats.totalSessionsLost);
-                        KillNumbLabel.Text = (TotalStatus.stats.totalChampionKills.ToString());
-                        DeathsNumbLabel.Text = (TotalStatus.stats.totalDeathsPerSession.ToString());
-                        AssistNumbLabel.Text = (TotalStatus.stats.totalAssists.ToString());
+                        WLlabel.Text = (TotalStatus.stats.totalSessionsWon + "/" + TotalStatus.stats.totalSessionsLost) + " (" + avgWonINT.ToString() + "%)";
+                        avgKDAlabel.Text = Math.Round(listChampions[0].stats.totalChampionKills / listChampions[0].stats.totalSessionsPlayed) + "/" + Math.Round(listChampions[0].stats.totalDeathsPerSession / listChampions[0].stats.totalSessionsPlayed) + "/" + Math.Round(listChampions[0].stats.totalAssists / listChampions[0].stats.totalSessionsPlayed);
+                        avgPentakillsLabel.Text = listChampions[0].stats.totalPentaKills.ToString();
+                        avgMinionsLabel.Text = (listChampions[0].stats.totalMinionKills / listChampions[0].stats.totalSessionsPlayed).ToString();
                     }
                     else    //UNDER LV30
                     {
-                        WLlabel.Text = "0";
-                        KillNumbLabel.Text = "0";
-                        DeathsNumbLabel.Text = "0";
-                        AssistNumbLabel.Text = "0";
+                        WLlabel.Text = "-";
+                        avgKDAlabel.Text = "-";
+                        avgPentakillsLabel.Text = "-";
+                        avgMinionsLabel.Text = "-";
                     }
 
 
@@ -407,6 +370,9 @@ namespace LoLAssistant
                         ChampionSearchTextBox.Enabled = true;
                     }
                     #endregion
+
+
+
                     //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
                     #region GetDivison
                     string DivisionResult = "";
@@ -415,7 +381,7 @@ namespace LoLAssistant
                     {
                         WebClient DivisionClient = new WebClient();
                         string s = "https://" + regionsComboBox.Text.ToLower() + ".api.pvp.net/api/lol/" + regionsComboBox.Text.ToLower().ToLower() + "/v2.5/league/by-summoner/" + summonerInfo.id + "/entry?api_key=" + apiKey;
-                        Stream DivisionData = client.OpenRead(s);
+                        Stream DivisionData = DivisionClient.OpenRead(s);
                         StreamReader DivisionReader = new StreamReader(DivisionData);
                         DivisionResult = DivisionReader.ReadLine();
                     }
@@ -499,8 +465,8 @@ namespace LoLAssistant
                         var response = (HttpWebResponse)ex.Response;
                         if (response.StatusCode == HttpStatusCode.NotFound)
                         {
-                            metroLabel1.Visible = true;
-                            metroLabel1.Text = "Summoner does not exist!";
+                            MessageLabel.Visible = true;
+                            MessageLabel.Text = "Summoner does not exist!";
                             emptyTextBoxControlTimer.Enabled = true;
                             loadingLabel.Visible = false;
                         }
@@ -523,9 +489,9 @@ namespace LoLAssistant
             if (x == 25)
             {
                 x = 0;
-                metroLabel1.Text = "";                                                      //HIDE LABEL AFTER SPECIFIC TIME
+                MessageLabel.Text = "";
                 emptyTextBoxControlTimer.Enabled = false;
-                metroLabel1.Visible = false;
+                MessageLabel.Visible = false;
             }
         }
         #endregion
@@ -565,9 +531,8 @@ namespace LoLAssistant
 
         private void ChampionSearchTextBox_TextChanged(object sender, EventArgs e)
         {
-            DataTable dt = (DataTable)ChampionsInfoGrid.DataSource;
-            dt.DefaultView.RowFilter = string.Format("Champion LIKE '%{0}%'", ChampionSearchTextBox.Text);
-            ChampionsInfoGrid.DataSource = dt;
+            DataTableSort dataSort = new DataTableSort();
+            ChampionsInfoGrid.DataSource = dataSort.DataTableSortMethod((DataTable)ChampionsInfoGrid.DataSource, ChampionSearchTextBox.Text);
 
         }
 
@@ -623,162 +588,20 @@ namespace LoLAssistant
             SearchSummoner(MatchInfo.participants[9].summonerName);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void SpectateButton_Click(object sender, EventArgs e)
         {
-
+            SpectateGame game = new SpectateGame(MatchInfo.observers.encryptionKey, MatchInfo.gameId, MatchInfo.platformId);
         }
 
+        private void metroTextButton1_Click(object sender, EventArgs e)
+        {
+            StyleManager.Style = MetroColorStyle.Lime;
+        }
 
-
-
-
-        //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-    }
-    public class SummonerInfo
-    {
-        public int id { get; set; }
-        public string name { get; set; }
-        public int profileIconId { get; set; }
-        public int summonerLevel { get; set; }
-        public long revisionDate { get; set; }
-    }
-
-    #region Stats
-
-    public class Stats
-    {
-        public int totalSessionsPlayed { get; set; }
-        public int totalSessionsLost { get; set; }
-        public int totalSessionsWon { get; set; }
-        public float totalChampionKills { get; set; }
-        public int totalDamageDealt { get; set; }
-        public int totalDamageTaken { get; set; }
-        public int mostChampionKillsPerSession { get; set; }
-        public int totalMinionKills { get; set; }
-        public int totalDoubleKills { get; set; }
-        public int totalTripleKills { get; set; }
-        public int totalQuadraKills { get; set; }
-        public int totalPentaKills { get; set; }
-        public int totalUnrealKills { get; set; }
-        public float totalDeathsPerSession { get; set; }
-        public int totalGoldEarned { get; set; }
-        public int mostSpellsCast { get; set; }
-        public int totalTurretsKilled { get; set; }
-        public int totalPhysicalDamageDealt { get; set; }
-        public int totalMagicDamageDealt { get; set; }
-        public int totalFirstBlood { get; set; }
-        public float totalAssists { get; set; }
-        public int maxChampionsKilled { get; set; }
-        public float maxNumDeaths { get; set; }
-        public int? killingSpree { get; set; }
-        public int? totalNeutralMinionsKilled { get; set; }
-        public int? totalHeal { get; set; }
-        public int? maxLargestKillingSpree { get; set; }
-        public int? maxLargestCriticalStrike { get; set; }
-        public int? maxTimePlayed { get; set; }
-        public int? maxTimeSpentLiving { get; set; }
-        public int? normalGamesPlayed { get; set; }
-        public int? rankedSoloGamesPlayed { get; set; }
-        public int? rankedPremadeGamesPlayed { get; set; }
-        public int? botGamesPlayed { get; set; }
-    }
-
-    public class Champion
-    {
-        public int id { get; set; }
-        public Stats stats { get; set; }                                                //CUSTOM CLASSES FOR DESERIALIZATE OBJECTS IN JSON
-    }
-
-    public class StatsInfo
-    {
-        public int summonerId { get; set; }
-        public long modifyDate { get; set; }
-        public List<Champion> champions { get; set; }
-    }
-
-
-
-    public class Entry
-    {
-        public string playerOrTeamId { get; set; }
-        public string playerOrTeamName { get; set; }
-        public string division { get; set; }
-        public int leaguePoints { get; set; }
-        public int wins { get; set; }
-        public int losses { get; set; }
-        public bool isHotStreak { get; set; }
-        public bool isVeteran { get; set; }
-        public bool isFreshBlood { get; set; }
-        public bool isInactive { get; set; }
-    }
-
-    public class Division
-    {
-        public string name { get; set; }
-        public string tier { get; set; }
-        public string queue { get; set; }
-        public List<Entry> entries { get; set; }
-    }
-
-
-
-    public class Rune
-    {
-        public int count { get; set; }
-        public int runeId { get; set; }
-    }
-
-    public class Mastery
-    {
-        public long rank { get; set; }
-        public int masteryId { get; set; }
-    }
-
-    public class Participant
-    {
-        public int teamId { get; set; }
-        public int spell1Id { get; set; }
-        public int spell2Id { get; set; }
-        public int championId { get; set; }
-        public int profileIconId { get; set; }
-        public string summonerName { get; set; }
-        public bool bot { get; set; }
-        public int summonerId { get; set; }
-        public List<Rune> runes { get; set; }
-        public List<Mastery> masteries { get; set; }
-    }
-
-    public class Observers
-    {
-        public string encryptionKey { get; set; }
-    }
-
-    public class BannedChampion
-    {
-        public int championId { get; set; }
-        public int teamId { get; set; }
-        public int pickTurn { get; set; }
-    }
-
-    public class LiveMatch
-    {
-        public long gameId { get; set; }
-        public long mapId { get; set; }
-        public string gameMode { get; set; }
-        public string gameType { get; set; }
-        public int gameQueueConfigId { get; set; }
-        public List<Participant> participants { get; set; }
-        public Observers observers { get; set; }
-        public string platformId { get; set; }
-        public List<BannedChampion> bannedChampions { get; set; }
-        public long gameStartTime { get; set; }
-        public long gameLength { get; set; }
-    }
-    #endregion
-
-    public class Customer
-    {
-        public int number { get; set; }
-        public string name { get; set; }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Settings st = new Settings();
+            st.ShowDialog();
+        }
     }
 }

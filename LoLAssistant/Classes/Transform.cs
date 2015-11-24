@@ -9,6 +9,7 @@ namespace LoLAssistant
 
     public class Transform
     {
+        public static string version = "";
         public static string[] ReturnChampion(string JSON, string IDs, int numberOfIDs)
         {
 
@@ -24,9 +25,9 @@ namespace LoLAssistant
             JSON = JSON.Replace(",title", string.Empty);
 
             string[] words = JSON.Split(',');
-            string version = words[0];
-            ReturnVersion.version = version;
-            JSON = JSON.Replace(version + ",", string.Empty);
+            string Version = words[0];
+            version = Version;
+            JSON = JSON.Replace(Version + ",", string.Empty);
             words = JSON.Split(',');
 
             string[] id = new string[words.Length / 5];
@@ -80,7 +81,7 @@ namespace LoLAssistant
                 Count++;
             }
             return champions;
-          
+
         }
         public static string[] ReturnChampionKey(string JSON, string IDs, int numberOfIDs)
         {
@@ -97,9 +98,9 @@ namespace LoLAssistant
             JSON = JSON.Replace(",title", string.Empty);
 
             string[] words = JSON.Split(',');
-            string version = words[0];
-            ReturnVersion.version = version;
-            JSON = JSON.Replace(version + ",", string.Empty);
+            string Version = words[0];
+            version = Version;
+            JSON = JSON.Replace(Version + ",", string.Empty);
             words = JSON.Split(',');
 
             string[] id = new string[words.Length / 5];
@@ -155,13 +156,30 @@ namespace LoLAssistant
             return Keys;
 
         }
-    }
-    public static class ReturnVersion
-    {
-        public static string version;
-        public static string returnVersion()
+        public static string returnVersion(string JSON)
         {
-            return version;
+            if (version != string.Empty)
+            {
+                return version;
+            }
+            else
+            {
+                JSON = JSON.Replace("\"", string.Empty);
+                JSON = JSON.Replace(":", ",");
+                JSON = JSON.Replace("{", string.Empty);
+                JSON = JSON.Replace("}", string.Empty);
+                JSON = JSON.Replace("type,champion,version,", string.Empty);
+                JSON = JSON.Replace("data,", string.Empty);
+                JSON = JSON.Replace(",name", string.Empty);
+                JSON = JSON.Replace(",key", string.Empty);
+                JSON = JSON.Replace(",id", string.Empty);
+                JSON = JSON.Replace(",title", string.Empty);
+
+                string[] words = JSON.Split(',');
+                string Version = words[0];
+                return Version;
+            }
+            return null;
         }
     }
 }

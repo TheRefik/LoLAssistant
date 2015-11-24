@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -84,7 +84,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Search.cs" />
+    <Compile Include="Classes\Division\Division.cs" />
+    <Compile Include="Classes\Division\Entry.cs" />
+    <Compile Include="Classes\LiveMatch\BannedChampion.cs" />
+    <Compile Include="Classes\LiveMatch\Divisions.cs" />
+    <Compile Include="Classes\LiveMatch\GetDivision.cs" />
+    <Compile Include="Classes\LiveMatch\LiveMatch.cs" />
+    <Compile Include="Classes\LiveMatch\Mastery.cs" />
+    <Compile Include="Classes\LiveMatch\MatchSearch.cs" />
+    <Compile Include="Classes\LiveMatch\Observers.cs" />
+    <Compile Include="Classes\LiveMatch\Participant.cs" />
+    <Compile Include="Classes\LiveMatch\Rune.cs" />
+    <Compile Include="Classes\LiveMatch\SummonerSpells.cs" />
+    <Compile Include="Classes\ProfileIcon.cs" />
+    <Compile Include="Classes\Statistics\Champion.cs" />
+    <Compile Include="Classes\Statistics\Stats.cs" />
+    <Compile Include="Classes\Statistics\StatsInfo.cs" />
+    <Compile Include="Classes\Summoner\GetSummoner.cs" />
+    <Compile Include="Classes\Summoner\SummonerInfo.cs" />
+    <Compile Include="Classes\SystemClass\DataTableSort.cs" />
+    <Compile Include="Classes\SystemClass\SpectateGame.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +113,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Transform.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.en.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +135,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -149,8 +180,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LoLAssistentLogoDark.ico" />
+    <None Include="Resources\ApiKey.bmp" />
+    <None Include="Resources\gear39 %282%29.png" />
+    <None Include="Resources\gear39 %281%29.png" />
+    <None Include="Resources\levels1.png" />
+    <None Include="Resources\gear39.png" />
     <None Include="Resources\RekSai_1.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release' ">
     <CreateItem Include="@(ReferenceCopyLocalPaths)" Condition="'%(Extension)'=='.dll'">

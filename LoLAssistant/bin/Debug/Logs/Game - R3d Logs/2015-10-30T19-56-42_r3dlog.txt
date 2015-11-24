@@ -1,0 +1,73 @@
+000000.000|       0.0000kb|      0.0000kb added| ALWAYS| Logging started at 2015-10-30T19:56:42.279
+000000.004|       0.0000kb|      0.0000kb added| ALWAYS| Loading RADS dynamic library: C:\Riot Games\League of Legends\RADS\RiotRadsIO.dll
+000000.005|       0.0000kb|      0.0000kb added|   OKAY| Riot::RADS::Reader::RadsExportsMain::Initialize: RADS library initializing with specified working directory "C:\Users\bodah\Documents\GitHub\LoLAssistant\LoLAssistant\bin\Debug".
+000000.006|       0.0000kb|      0.0000kb added|   OKAY| Riot::RADS::Reader::RuntimeEnvironment::Create: Creating RADS runtime environment: RADS root directory = "C:/Users/bodah/Documents/GitHub/LoLAssistant/LoLAssistant/bin/Debug"
+000000.006|       0.0000kb|      0.0000kb added|   WARN| Riot::RADS::Reader::RuntimeEnvironment::GetProjectTypeNameAndVersion: Did not find keywords "projects" or "solutions" in path C:/Users/bodah/Documents/GitHub/LoLAssistant/LoLAssistant/bin/Debug
+000000.006|       0.0000kb|      0.0000kb added|  ERROR| Riot::RADS::Reader::RuntimeEnvironment::Create: RADS runtime environment creation failed because it was unable to get the project information.
+000000.006|       0.0000kb|      0.0000kb added|  ERROR| Riot::RADS::Reader::RadsExportsMain::Initialize: RADS library initialization failed to create the runtime environment.
+000000.006|       0.0000kb|      0.0000kb added|  ERROR| Failed to initialize Rads dynamic library: C:\Riot Games\League of Legends\RADS\RiotRadsIO.dll
+000000.058|       0.0000kb|      0.0000kb added|   OKAY| Unable to process data overlay file ./ToolsConfig.xml, defaulting to overlay now
+000000.058|       0.0000kb|      0.0000kb added| ALWAYS| Data overlay start folder initialized to DATA, Content/Src
+000000.058|       0.0000kb|      0.0000kb added| ALWAYS| Global logging level set to   WARN
+000000.059|       0.0000kb|      0.0000kb added| ALWAYS| Build Version: Version 5.21.0.297 (Oct 26 2015/23:23:03) [PUBLIC] <Releases/5.21> ChangeList: 1236539
+000000.130|       0.0000kb|      0.0000kb added| ALWAYS| Performing WSAStartup
+000000.172|       0.0000kb|      0.0000kb added| ALWAYS| Started System Init
+000000.172|       0.0000kb|      0.0000kb added| ALWAYS| Maestro Init
+000000.182|       0.0000kb|      0.0000kb added| ALWAYS| Started ReplayDownloadManager thread.
+000000.182|       0.0000kb|      0.0000kb added| ALWAYS| ReplayDownloader: ==== Fetch MetaData Phase ====
+000000.182|       0.0000kb|      0.0000kb added| ALWAYS| ---- Waiting to fetch 5000
+000001.212|       0.0000kb|      0.0000kb added| ALWAYS| Maestro completed init
+000001.212|       0.0000kb|      0.0000kb added| ALWAYS| zip manifest, 'ClientZips.txt', not found (expected).
+000001.213|       0.0000kb|      0.0000kb added| ALWAYS| Replay mode
+000001.214| ALWAYS| StartSession called
+000001.214| ALWAYS| Started Init event arguments
+000001.215| ALWAYS| Waiting until connection...
+000001.218| ALWAYS| InitRenderer() enter
+000001.218| ALWAYS| r3dRenderLayer::Init(0x000B0780) enter
+000001.238| ALWAYS| r3dRenderLayer::Init() exit successfully
+000001.307| ALWAYS| OS Version String: 10  Home, x64
+000001.307| ALWAYS| CPU: GenuineIntel, Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz, Intel64 Family 6 Model 15 Stepping 11, 2400 (0 core)
+000001.307| ALWAYS| Measured processor speed: 2384
+000001.307| ALWAYS| Display info: NVIDIA GeForce GTX 460 1073741824 10.18.13.5354
+000001.308| ALWAYS| Physical memory: 2147483648
+000001.308| ALWAYS| {"messageType":"hardware_information","message_body":"Hardware Info","operating_system":"10  Home, x64","cpu":"GenuineIntel","cpu_processor":"Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz","cpu_identifier":"Intel64 Family 6 Model 15 Stepping 11","cpu_topology":4,"gpu":"NVIDIA GeForce GTX 460","video_memory":"1073741824","driver_version":"10.18.13.5354","physical_memory":2147483648,"wine":false}
+000001.308| ALWAYS| -----HARDWARE INFORMATION START-----
+000001.308| ALWAYS| Operating System: 10  Home, x64
+000001.308| ALWAYS| GPU Manufacturer: NVIDIA GeForce GTX 460
+000001.308| ALWAYS| GPU Memory: 1073741824
+000001.308| ALWAYS| GPU Driver Version: 10.18.13.5354
+000001.308| ALWAYS| CPU Brand: GenuineIntel
+000001.308| ALWAYS| CPU Processor Name: Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz
+000001.308| ALWAYS| CPU Identifier: Intel64 Family 6 Model 15 Stepping 11
+000001.308| ALWAYS| CPU Speed: 2400
+000001.308| ALWAYS| CPU Topology: 4 Core
+000001.308| ALWAYS| Physical memory: 2147483648
+000001.308| ALWAYS| -----HARDWARE INFORMATION END-----
+000001.324|  ERROR| Failed to load any localizations!
+000001.324| ALWAYS| IME file, 'C:/Users/bodah/Documents/GitHub/LoLAssistant/LoLAssistant/bin/Debug/Data/Menu/IMEConfig.xml', is optional. The following error is expected.
+000001.325|  ERROR| Missing file on r3dGFile open :C:/Users/bodah/Documents/GitHub/LoLAssistant/LoLAssistant/bin/Debug/Data/Menu/IMEConfig.xml
+000001.325|  ERROR| Missing file on r3dGFile open :\Bin\Data\C:/Users/bodah/Documents/GitHub/LoLAssistant/LoLAssistant/bin/Debug/Data/Menu/IMEConfig.xml
+000001.334|  ERROR| Failed to find IME candidate list interface from the path set to: IME_AS2.gfx
+000001.334| ALWAYS| SharedConfigPath: ../Air/preferences/
+000001.337| ALWAYS| OptionsManager::ApplyAutoPerformanceSettings()
+000001.337| ALWAYS| r3dRenderer::SetMode: Trying resolution 1920x1080, bpp 32, windowMode 0, vsync on...
+000001.337| ALWAYS| In Riot::Win::Resize: Resizing the window and retrieving monitor info
+000001.337| ALWAYS| In Riot::Win::Resize: Initial VideoMode(3215e30) and resolution (1920 x 1080) 
+000001.337| ALWAYS| In Riot::Win::Resize: VideoMode(3215e30) and resolution (960 x 540) 
+000001.343| ALWAYS| In Riot::Win::Resize: Resized window to resolution 1920x1080
+000001.343| ALWAYS| rr3dRenderLayer::InitDevice(XRes = 1920, YRes = 1080, BPP = 32,  Flags=1280) enter
+000001.343| ALWAYS| rr3dRenderLayer::InitDevice: Creating d3d device
+000001.343| ALWAYS| CreateDevice: Disabling EnableAutoDepthStencil in favor of an INTZ depth buffer.
+000001.343| ALWAYS| CreateDevice: Disabling present depth discard in favor of an INTZ depth buffer.
+000001.597| ALWAYS| Success
+000001.598| ALWAYS| r3dRenderLayer::RecreateOwnedResources
+000001.719|  ERROR| Can not open file <White.dds> *********
+000001.719|  ERROR| Failed to load White.dds
+000001.719|   WARN| r3dTexture EX: White.dds - not found. Dummy texture created.
+000001.719|  ERROR| Can not open file <Blank.dds> *********
+000001.719|  ERROR| Failed to load Blank.dds
+000001.719|   WARN| r3dTexture EX: Blank.dds - not found. Dummy texture created.
+000001.719| ALWAYS| r3dRenderLayer::InitResources exit successfully
+000001.719|  ERROR| Failed to load font definitions from GameFonts.bin. Game fonts will not work!
+000001.720|  ERROR| FontMappings.txt was missing or otherwise unable to open
+000002.047|  ERROR| Crash Occurred
