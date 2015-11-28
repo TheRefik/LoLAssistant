@@ -152,12 +152,15 @@ namespace LoLAssistant
         #region Search
         public void SearchMatch()
         {
+
             string SummonerName = "";
             string Region = "";
             int MenuListCount = 0;
             
             TextBoxSummonerName.Invoke(new MethodInvoker(delegate { SummonerName = TextBoxSummonerName.Text; }));
             regionsComboBox.Invoke(new MethodInvoker(delegate { Region = regionsComboBox.Text; }));
+            VersionClass ver = GetVersion.ReturnVersion(Region, apiKey);
+            version = ver.n.champion;
             this.Invoke((MethodInvoker)delegate
             {
                 MenuListCount = MenuControls.Count;
@@ -191,7 +194,7 @@ namespace LoLAssistant
 
                 for (int i = 0; i < 10; i++)
                 {
-                    pb[i].Load("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
+                    pb[i].Load("http://ddragon.leagueoflegends.com/cdn/"+version+"/img/champion/" + Keys[i] + ".png");
                     this.Invoke((MethodInvoker)delegate
                     {
                         LoLToolTip.SetToolTip(pb[i], Names[i]);
@@ -202,7 +205,7 @@ namespace LoLAssistant
                     PictureBox[] pbBans = new PictureBox[6] { banPB1, banPB2, banPB3, banPB4, banPB5, banPB6 };
                     for (int i = 10; i < Keys.Length; i++)
                     {
-                        pbBans[i - 10].Load("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
+                        pbBans[i - 10].Load("http://ddragon.leagueoflegends.com/cdn/" + version + "/img/champion/" + Keys[i] + ".png");
                         this.Invoke((MethodInvoker)delegate
                         {
                             LoLToolTip.SetToolTip(pbBans[i - 10], Names[i]);
@@ -223,7 +226,7 @@ namespace LoLAssistant
                     {
                         if (item.Id == part.spell1Id)
                         {
-                            summonerSpell_1[x].Load("http://ddragon.leagueoflegends.com/cdn/5.22.3/img/spell/" + item.Key + ".png");
+                            summonerSpell_1[x].Load("http://ddragon.leagueoflegends.com/cdn/" + version + "/img/spell/" + item.Key + ".png");
 
                             this.Invoke((MethodInvoker)delegate
                             {
@@ -232,7 +235,7 @@ namespace LoLAssistant
                         }
                         if (item.Id == part.spell2Id)
                         {
-                            summonerSpell_2[x].Load("http://ddragon.leagueoflegends.com/cdn/5.22.3/img/spell/" + item.Key + ".png");
+                            summonerSpell_2[x].Load("http://ddragon.leagueoflegends.com/cdn/" + version + "/img/spell/" + item.Key + ".png");
                             this.Invoke((MethodInvoker)delegate
                             {
                                 LoLToolTip.SetToolTip(summonerSpell_2[x], item.Name);
@@ -280,7 +283,7 @@ namespace LoLAssistant
             }
             catch (WebException ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.ToString());
                 if (ex.Status == WebExceptionStatus.ProtocolError)
                 {
                     var response = (HttpWebResponse)ex.Response;

@@ -138,6 +138,7 @@ namespace LoLAssistant.Classes.LiveMatch
                     default:
                         images[a] = new Bitmap(LoLAssistant.Properties.Resources.provisional_converted);
                         CollectionSort.divList[a].Tier = "30";
+                        CollectionSort.divList[a].Name = "Unranked";
                         break;
                 }
             }

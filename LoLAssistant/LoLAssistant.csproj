@@ -103,6 +103,7 @@
     <Compile Include="Classes\Summoner\GetSummoner.cs" />
     <Compile Include="Classes\Summoner\SummonerInfo.cs" />
     <Compile Include="Classes\SystemClass\DataTableSort.cs" />
+    <Compile Include="Classes\SystemClass\GetVersion.cs" />
     <Compile Include="Classes\SystemClass\SpectateGame.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
