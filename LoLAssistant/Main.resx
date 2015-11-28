@@ -134,10 +134,34 @@
   <data name="basicPage.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="LoadCircle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>712, 150</value>
+  </data>
+  <data name="LoadCircle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LoadCircle.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="LoadCircle.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LoadCircle.Name" xml:space="preserve">
+    <value>LoadCircle</value>
+  </data>
+  <data name="&gt;&gt;LoadCircle.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroProgressSpinner, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;LoadCircle.Parent" xml:space="preserve">
+    <value>basicPage</value>
+  </data>
+  <data name="&gt;&gt;LoadCircle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="MessageLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MessageLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -172,7 +196,7 @@
     <value>basicPage</value>
   </data>
   <data name="&gt;&gt;MessageLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="SaveChechBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -202,7 +226,7 @@
     <value>basicPage</value>
   </data>
   <data name="&gt;&gt;SaveChechBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="SummonerCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -232,7 +256,7 @@
     <value>basicPage</value>
   </data>
   <data name="&gt;&gt;SummonerCheckBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="LiveMatchCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -262,39 +286,6 @@
     <value>basicPage</value>
   </data>
   <data name="&gt;&gt;LiveMatchCheckBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="loadingLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="loadingLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="loadingLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>713, 153</value>
-  </data>
-  <data name="loadingLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 19</value>
-  </data>
-  <data name="loadingLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="loadingLabel.Text" xml:space="preserve">
-    <value>Loading...</value>
-  </data>
-  <data name="loadingLabel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;loadingLabel.Name" xml:space="preserve">
-    <value>loadingLabel</value>
-  </data>
-  <data name="&gt;&gt;loadingLabel.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;loadingLabel.Parent" xml:space="preserve">
-    <value>basicPage</value>
-  </data>
-  <data name="&gt;&gt;loadingLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="regionsComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">

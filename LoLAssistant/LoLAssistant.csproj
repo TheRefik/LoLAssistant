@@ -180,6 +180,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LoLAssistentLogoDark.ico" />
+    <None Include="Resources\silver_converted.png" />
+    <None Include="Resources\provisional_converted.png" />
+    <None Include="Resources\platinum_converted.png" />
+    <None Include="Resources\master_converted.png" />
+    <None Include="Resources\challenger_converted.png" />
+    <None Include="Resources\gold_converted.png" />
+    <None Include="Resources\diamond_converted.png" />
+    <None Include="Resources\bronze_converted.png" />
     <None Include="Resources\ApiKey.bmp" />
     <None Include="Resources\gear39 %282%29.png" />
     <None Include="Resources\gear39 %281%29.png" />

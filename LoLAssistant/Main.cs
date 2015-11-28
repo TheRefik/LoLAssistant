@@ -20,23 +20,55 @@ using LoLAssistant.Classes.Statistics;
 using LoLAssistant.Classes.Summoner;
 using LoLAssistant.Classes.SystemClass;
 using LoLAssistant.Classes;
+using System.Threading;
+using System.Reflection;
 
 namespace LoLAssistant
 {
 
+
     public partial class Main : MetroForm
     {
-       public static string JSON;
+        private delegate void SetControlPropertyThreadSafeDelegate(
+    Control control,
+    string propertyName,
+    object propertyValue);
+
+        public static void SetControlPropertyThreadSafe(
+            Control control,
+            string propertyName,
+            object propertyValue)
+        {
+            if (control.InvokeRequired)
+            {
+                control.Invoke(new SetControlPropertyThreadSafeDelegate
+                (SetControlPropertyThreadSafe),
+                new object[] { control, propertyName, propertyValue });
+            }
+            else
+            {
+                control.GetType().InvokeMember(
+                    propertyName,
+                    BindingFlags.SetProperty,
+                    null,
+                    control,
+                    new object[] { propertyValue });
+            }
+        }
+
+
+        public static string JSON;
         string apiKey = "491cc7eb-f482-4c30-b876-3a23b69267d4";
         string version;
         bool canBackToMatch = false;
         LiveMatch MatchInfo;
-        string Region;
+        List<Control> MenuControls;
         public Main()
         {
             InitializeComponent();
             this.Style = StyleManager.Style;
             AllowTransparency = false;
+            MenuControls = new List<Control>() { TextBoxSummonerName, regionsComboBox, LiveMatchCheckBox, SummonerCheckBox, SaveChechBox, seachButton };
             List<string> Regions = new List<string> { "EUNE", "EUW", "NA", "BR", "TR", "LAS", "LAN", "KR", "OCE", "RU" };   //SET REGIONS IN COMBOBOX
             regionsComboBox.DataSource = Regions;
 
@@ -100,7 +132,17 @@ namespace LoLAssistant
 
             if (LiveMatchCheckBox.Checked)
             {
-                SearchMatch();
+                LoadCircle.Visible = true;
+                if (TextBoxSummonerName.Text == "")
+                {
+                    MessageLabel.Visible = true;
+                    MessageLabel.Text = "Enter summoner name!";                            //CONTROL EMPTY TEXTOBX
+                    emptyTextBoxControlTimer.Enabled = true;
+                    LoadCircle.Visible = false;
+                }
+                Thread liveMatchTheard = new Thread(SearchMatch);
+                liveMatchTheard.Start();
+
             }
             if (SummonerCheckBox.Checked)
             {
@@ -110,131 +152,174 @@ namespace LoLAssistant
         #region Search
         public void SearchMatch()
         {
-            loadingLabel.Visible = true;
-            if (TextBoxSummonerName.Text == "")
+            string SummonerName = "";
+            string Region = "";
+            int MenuListCount = 0;
+            
+            TextBoxSummonerName.Invoke(new MethodInvoker(delegate { SummonerName = TextBoxSummonerName.Text; }));
+            regionsComboBox.Invoke(new MethodInvoker(delegate { Region = regionsComboBox.Text; }));
+            this.Invoke((MethodInvoker)delegate
             {
-                MessageLabel.Visible = true;
-                MessageLabel.Text = "Enter summoner name!";                            //CONTROL EMPTY TEXTOBX
-                emptyTextBoxControlTimer.Enabled = true;
-                loadingLabel.Visible = false;
-            }
-            else
+                MenuListCount = MenuControls.Count;
+            });
+
+            try
             {
 
-                try
+                for(int a = 0; a < MenuListCount ; a++)
                 {
-                    Region = regionsComboBox.Text;
-                    SummonerInfo summonerInfo = GetSummoner.ReturnSummoner(TextBoxSummonerName.Text, regionsComboBox.Text, apiKey);
-                    MatchInfo = MatchSearch.GetMatch(regionsComboBox.Text, summonerInfo.id, apiKey);
-                    string[] Keys = MatchSearch.GetKeys(JSON, MatchInfo);
-                    string[] Names = MatchSearch.GetName(JSON, MatchInfo);
+                    SetControlPropertyThreadSafe(MenuControls[a], "Enabled", false);
+                }
+                SummonerInfo summonerInfo = GetSummoner.ReturnSummoner(SummonerName, Region, apiKey);
+                MatchInfo = MatchSearch.GetMatch(Region, summonerInfo.id, apiKey);
+                string[] Keys = MatchSearch.GetKeys(JSON, MatchInfo);
+                string[] Names = MatchSearch.GetName(JSON, MatchInfo);
 
-                    Summoner1.Text = MatchInfo.participants[0].summonerName;
-                    Summoner2.Text = MatchInfo.participants[1].summonerName;
-                    Summoner3.Text = MatchInfo.participants[2].summonerName;
-                    Summoner4.Text = MatchInfo.participants[3].summonerName;
-                    Summoner5.Text = MatchInfo.participants[4].summonerName;
-                    Summoner6.Text = MatchInfo.participants[5].summonerName;
-                    Summoner7.Text = MatchInfo.participants[6].summonerName;
-                    Summoner8.Text = MatchInfo.participants[7].summonerName;
-                    Summoner9.Text = MatchInfo.participants[8].summonerName;
-                    Summoner10.Text = MatchInfo.participants[9].summonerName;
-                    //label1.Text = MatchInfo.participants[0].
+                SetControlPropertyThreadSafe(Summoner1, "Text", MatchInfo.participants[0].summonerName);
+                SetControlPropertyThreadSafe(Summoner2, "Text", MatchInfo.participants[1].summonerName);
+                SetControlPropertyThreadSafe(Summoner3, "Text", MatchInfo.participants[2].summonerName);
+                SetControlPropertyThreadSafe(Summoner4, "Text", MatchInfo.participants[3].summonerName);
+                SetControlPropertyThreadSafe(Summoner5, "Text", MatchInfo.participants[4].summonerName);
+                SetControlPropertyThreadSafe(Summoner6, "Text", MatchInfo.participants[5].summonerName);
+                SetControlPropertyThreadSafe(Summoner7, "Text", MatchInfo.participants[6].summonerName);
+                SetControlPropertyThreadSafe(Summoner8, "Text", MatchInfo.participants[7].summonerName);
+                SetControlPropertyThreadSafe(Summoner9, "Text", MatchInfo.participants[8].summonerName);
+                SetControlPropertyThreadSafe(Summoner10, "Text", MatchInfo.participants[9].summonerName);
 
-                    PictureBox[] pb = new PictureBox[10] { TeamMatePictureBox0, TeamMatePictureBox1, TeamMatePictureBox2, TeamMatePictureBox3, TeamMatePictureBox4, TeamMatePictureBox5, TeamMatePictureBox6, TeamMatePictureBox7, TeamMatePictureBox8, TeamMatePictureBox9 };
 
-                    for (int i = 0; i < 10; i++)
+                PictureBox[] pb = new PictureBox[10] { TeamMatePictureBox0, TeamMatePictureBox1, TeamMatePictureBox2, TeamMatePictureBox3, TeamMatePictureBox4, TeamMatePictureBox5, TeamMatePictureBox6, TeamMatePictureBox7, TeamMatePictureBox8, TeamMatePictureBox9 };
+
+                for (int i = 0; i < 10; i++)
+                {
+                    pb[i].Load("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
+                    this.Invoke((MethodInvoker)delegate
                     {
-                        pb[i].Load("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
                         LoLToolTip.SetToolTip(pb[i], Names[i]);
-                    }
-                    if (MatchInfo.gameQueueConfigId == 4 || MatchInfo.gameQueueConfigId == 6 || MatchInfo.gameQueueConfigId == 9 || MatchInfo.gameQueueConfigId == 41 || MatchInfo.gameQueueConfigId == 42)
-                    {
-                        PictureBox[] pbBans = new PictureBox[6] { banPB1, banPB2, banPB3, banPB4, banPB5, banPB6 };
-                        for (int i = 10; i < Keys.Length; i++)
-                        {
-                            pbBans[i - 10].Load("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
-                            LoLToolTip.SetToolTip(pbBans[i-10], Names[i] );
-                        }
-                    }
-                    PictureBox[] summonerSpell_1 = new PictureBox[10] { Summoner1Spell1, Summoner2Spell1, Summoner3Spell1, Summoner4Spell1, Summoner5Spell1, Summoner6Spell1, Summoner7Spell1, Summoner8Spell1, Summoner9Spell1, Summoner10Spell1 };
-                    PictureBox[] summonerSpell_2 = new PictureBox[10] { Summoner1Spell2, Summoner2Spell2, Summoner3Spell2, Summoner4Spell2, Summoner5Spell2, Summoner6Spell2, Summoner7Spell2, Summoner8Spell2, Summoner9Spell2, Summoner10Spell2 };
-
-                    List<Spells> summonerSpell = SummonerSpells.GetSpells(regionsComboBox.Text, apiKey);
-
-                    int x = 0;
-                    string[] SummID = new string[10];
-                    foreach (Participant part in MatchInfo.participants)
-                    {
-                        SummID[x] = part.summonerId.ToString();
-                        foreach(var item in summonerSpell)
-                        {
-                            if(item.Id == part.spell1Id)
-                            {
-                                summonerSpell_1[x].Load("http://ddragon.leagueoflegends.com/cdn/5.22.3/img/spell/" + item.Key + ".png");
-                                LoLToolTip.SetToolTip((Control)summonerSpell_1[x], item.Name);
-                            }
-                            if(item.Id == part.spell2Id)
-                            {
-                                summonerSpell_2[x].Load("http://ddragon.leagueoflegends.com/cdn/5.22.3/img/spell/" + item.Key + ".png");
-                                LoLToolTip.SetToolTip((Control)summonerSpell_2[x], item.Name);
-                            }
-                        }
-                        x++;
-                    }
-
-
-                    PictureBox[] DivisionsPB = new PictureBox[10] { divPb1, divPB2, divPB3, divPB4, divPB5, divPB6, divPB7, divPB8, divPB9, divPB10 };
-                    Label[] divLabels = new Label[10] { DivString1, DivString2, DivString3, DivString4, DivString5, DivString6, DivString7, DivString8, DivString9, DivString10 };
-
-                    ReturnDivision divisionsImages = ReturnDivisionInfo.GetDivisions(Region, apiKey, SummID);
-                    
-
-
-                    for(int i = 0; i < divisionsImages.divList.Count(); i++)
-                    {
-                        divLabels[i].Text = divisionsImages.divList[i].Division;
-                        DivisionsPB[i].Image = divisionsImages.image[i];
-                        LoLToolTip.SetToolTip((Control)DivisionsPB[i], divisionsImages.divList[i].Name);
-                    }
-
-
-
-                    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-                    loadingLabel.Visible = false;
-                    basicPage.Hide();
-                    FIVEvsFIVEpanel.Show();                                           //Page Navigation
-                    FIVEvsFIVEpanel.BringToFront();
+                    });
                 }
-                catch (WebException ex)
+                if (MatchInfo.gameQueueConfigId == 4 || MatchInfo.gameQueueConfigId == 6 || MatchInfo.gameQueueConfigId == 9 || MatchInfo.gameQueueConfigId == 41 || MatchInfo.gameQueueConfigId == 42)
                 {
-                    MessageBox.Show(ex.Message);
-                    if (ex.Status == WebExceptionStatus.ProtocolError)
+                    PictureBox[] pbBans = new PictureBox[6] { banPB1, banPB2, banPB3, banPB4, banPB5, banPB6 };
+                    for (int i = 10; i < Keys.Length; i++)
                     {
-                        var response = (HttpWebResponse)ex.Response;
-                        if (response.StatusCode == HttpStatusCode.NotFound)
+                        pbBans[i - 10].Load("http://ddragon.leagueoflegends.com/cdn/5.20.1/img/champion/" + Keys[i] + ".png");
+                        this.Invoke((MethodInvoker)delegate
                         {
-                            MessageLabel.Visible = true;
-                            MessageLabel.Text = "The summoner " + TextBoxSummonerName.Text + " is not currently in a game!";
-                            emptyTextBoxControlTimer.Enabled = true;
-                            loadingLabel.Visible = false;
+                            LoLToolTip.SetToolTip(pbBans[i - 10], Names[i]);
+                        });
+                    }
+                }
+                PictureBox[] summonerSpell_1 = new PictureBox[10] { Summoner1Spell1, Summoner2Spell1, Summoner3Spell1, Summoner4Spell1, Summoner5Spell1, Summoner6Spell1, Summoner7Spell1, Summoner8Spell1, Summoner9Spell1, Summoner10Spell1 };
+                PictureBox[] summonerSpell_2 = new PictureBox[10] { Summoner1Spell2, Summoner2Spell2, Summoner3Spell2, Summoner4Spell2, Summoner5Spell2, Summoner6Spell2, Summoner7Spell2, Summoner8Spell2, Summoner9Spell2, Summoner10Spell2 };
+
+                List<Spells> summonerSpell = SummonerSpells.GetSpells(Region, apiKey);
+
+                int x = 0;
+                string[] SummID = new string[10];
+                foreach (Participant part in MatchInfo.participants)
+                {
+                    SummID[x] = part.summonerId.ToString();
+                    foreach (var item in summonerSpell)
+                    {
+                        if (item.Id == part.spell1Id)
+                        {
+                            summonerSpell_1[x].Load("http://ddragon.leagueoflegends.com/cdn/5.22.3/img/spell/" + item.Key + ".png");
+
+                            this.Invoke((MethodInvoker)delegate
+                            {
+                                LoLToolTip.SetToolTip(summonerSpell_1[x], item.Name);
+                            });
+                        }
+                        if (item.Id == part.spell2Id)
+                        {
+                            summonerSpell_2[x].Load("http://ddragon.leagueoflegends.com/cdn/5.22.3/img/spell/" + item.Key + ".png");
+                            this.Invoke((MethodInvoker)delegate
+                            {
+                                LoLToolTip.SetToolTip(summonerSpell_2[x], item.Name);
+                            });
                         }
                     }
+                    x++;
+                }
+
+
+                PictureBox[] DivisionsPB = new PictureBox[10] { divPb1, divPB2, divPB3, divPB4, divPB5, divPB6, divPB7, divPB8, divPB9, divPB10 };
+                Label[] divLabels = new Label[10] { DivString1, DivString2, DivString3, DivString4, DivString5, DivString6, DivString7, DivString8, DivString9, DivString10 };
+
+                ReturnDivision divisionsImages = ReturnDivisionInfo.GetDivisions(Region, apiKey, SummID);
+
+
+
+                for (int i = 0; i < divisionsImages.divList.Count(); i++)
+                {
+                    SetControlPropertyThreadSafe(divLabels[i], "Text", divisionsImages.divList[i].Division);
+                    SetControlPropertyThreadSafe(DivisionsPB[i], "Image", divisionsImages.image[i]);
+
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        LoLToolTip.SetToolTip((Control)DivisionsPB[i], divisionsImages.divList[i].Name);
+                    });
 
                 }
+
+
+
+                //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+                SetControlPropertyThreadSafe(LoadCircle, "Visible", false);
+                for (int a = 0; a < MenuListCount; a++)
+                {
+                    SetControlPropertyThreadSafe(MenuControls[a], "Enabled", true);
+                }
+                this.Invoke((MethodInvoker)delegate
+                {
+                    basicPage.Hide();
+                    FIVEvsFIVEpanel.Show();
+                    FIVEvsFIVEpanel.BringToFront();
+                });
+
+            }
+            catch (WebException ex)
+            {
+                MessageBox.Show(ex.Message);
+                if (ex.Status == WebExceptionStatus.ProtocolError)
+                {
+                    var response = (HttpWebResponse)ex.Response;
+                    if (response.StatusCode == HttpStatusCode.NotFound)
+                    {
+                        SetControlPropertyThreadSafe(MessageLabel, "Visible", true);
+                        SetControlPropertyThreadSafe(MessageLabel, "Text", "The summoner " + SummonerName + " is not currently in a game!");
+
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            emptyTextBoxControlTimer.Enabled = true;
+                        });
+
+                        SetControlPropertyThreadSafe(LoadCircle, "Visible", false);
+                        for (int a = 0; a < MenuListCount; a++)
+                        {
+                            SetControlPropertyThreadSafe(MenuControls[a], "Enabled", true);
+                        }
+                    }
+                }
+                for (int a = 0; a < MenuListCount; a++)
+                {
+                    SetControlPropertyThreadSafe(MenuControls[a], "Enabled", true);
+                }
+                SetControlPropertyThreadSafe(LoadCircle, "Visible", false);
+
             }
         }
 
         public void SearchSummoner(string Summoner)
         {
             #region Control_TextBox
-            loadingLabel.Visible = true;
+            LoadCircle.Visible = true;
             if (Summoner == "")
             {
                 MessageLabel.Visible = true;
                 MessageLabel.Text = "Enter summoner name!";                            //CONTROL EMPTY TEXTOBX
                 emptyTextBoxControlTimer.Enabled = true;
-                loadingLabel.Visible = false;
+                LoadCircle.Visible = false;
             }
             #endregion
             else
@@ -245,7 +330,7 @@ namespace LoLAssistant
 
                     SummonerInfo summonerInfo = GetSummoner.ReturnSummoner(Summoner, regionsComboBox.Text, apiKey);
 
-                    SummonerIconPictureBox.Image = ProfileIcon.ReturnIcon(summonerInfo.profileIconId.ToString(),version);
+                    SummonerIconPictureBox.Image = ProfileIcon.ReturnIcon(summonerInfo.profileIconId.ToString(), version);
 
 
                     SummonerNameLabel.Text = summonerInfo.name;
@@ -292,7 +377,7 @@ namespace LoLAssistant
                             {
                                 TotalStatus = champion;
                             }
-                                listChampions.Add(champion);
+                            listChampions.Add(champion);
                         }
                         listChampions.Sort(delegate (Champion c1, Champion c2) { return c2.stats.totalSessionsPlayed.CompareTo(c1.stats.totalSessionsPlayed); });
                         string joinedIDs = "";
@@ -453,7 +538,7 @@ namespace LoLAssistant
                     basicPage.Hide();
                     SummonerInfoPanel.Show();
                     SummonerInfoPanel.BringToFront();
-                    loadingLabel.Visible = false;                                  //PAGE NAVIGATION
+                    LoadCircle.Visible = false;                                  //PAGE NAVIGATION
                     TypeLabel.Text = "Ranked Statistics";
                     TypeLabel.Visible = true;
                     #endregion
@@ -468,7 +553,7 @@ namespace LoLAssistant
                             MessageLabel.Visible = true;
                             MessageLabel.Text = "Summoner does not exist!";
                             emptyTextBoxControlTimer.Enabled = true;
-                            loadingLabel.Visible = false;
+                            LoadCircle.Visible = false;
                         }
                     }
                 }

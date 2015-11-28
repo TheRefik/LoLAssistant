@@ -134,11 +134,11 @@
             this.Summoner1 = new System.Windows.Forms.Label();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.basicPage = new MetroFramework.Controls.MetroPanel();
+            this.LoadCircle = new MetroFramework.Controls.MetroProgressSpinner();
             this.MessageLabel = new System.Windows.Forms.Label();
             this.SaveChechBox = new MetroFramework.Controls.MetroCheckBox();
             this.SummonerCheckBox = new MetroFramework.Controls.MetroRadioButton();
             this.LiveMatchCheckBox = new MetroFramework.Controls.MetroRadioButton();
-            this.loadingLabel = new MetroFramework.Controls.MetroLabel();
             this.regionsComboBox = new MetroFramework.Controls.MetroComboBox();
             this.TextBoxSummonerName = new MetroFramework.Controls.MetroTextBox();
             this.seachButton = new MetroFramework.Controls.MetroButton();
@@ -1053,11 +1053,11 @@
             // basicPage
             // 
             resources.ApplyResources(this.basicPage, "basicPage");
+            this.basicPage.Controls.Add(this.LoadCircle);
             this.basicPage.Controls.Add(this.MessageLabel);
             this.basicPage.Controls.Add(this.SaveChechBox);
             this.basicPage.Controls.Add(this.SummonerCheckBox);
             this.basicPage.Controls.Add(this.LiveMatchCheckBox);
-            this.basicPage.Controls.Add(this.loadingLabel);
             this.basicPage.Controls.Add(this.regionsComboBox);
             this.basicPage.Controls.Add(this.TextBoxSummonerName);
             this.basicPage.Controls.Add(this.seachButton);
@@ -1069,6 +1069,16 @@
             this.basicPage.VerticalScrollbarBarColor = true;
             this.basicPage.VerticalScrollbarHighlightOnWheel = false;
             this.basicPage.VerticalScrollbarSize = 10;
+            // 
+            // LoadCircle
+            // 
+            resources.ApplyResources(this.LoadCircle, "LoadCircle");
+            this.LoadCircle.Maximum = 100;
+            this.LoadCircle.Name = "LoadCircle";
+            this.LoadCircle.Speed = 2F;
+            this.LoadCircle.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.LoadCircle.UseSelectable = true;
+            this.LoadCircle.Value = 50;
             // 
             // MessageLabel
             // 
@@ -1105,12 +1115,6 @@
             this.LiveMatchCheckBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.LiveMatchCheckBox.UseCustomBackColor = true;
             this.LiveMatchCheckBox.UseSelectable = true;
-            // 
-            // loadingLabel
-            // 
-            resources.ApplyResources(this.loadingLabel, "loadingLabel");
-            this.loadingLabel.Name = "loadingLabel";
-            this.loadingLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // regionsComboBox
             // 
@@ -1279,7 +1283,6 @@
         private MetroFramework.Controls.MetroPanel SummonerInfoPanel;
         private System.Windows.Forms.Label SummonerNameLabel;
         private System.Windows.Forms.PictureBox SummonerIconPictureBox;
-        private MetroFramework.Controls.MetroLabel loadingLabel;
         private MetroFramework.Controls.MetroButton backButton;
         private MetroFramework.Controls.MetroGrid ChampionsInfoGrid;
         private System.Windows.Forms.Label levelLabel;
@@ -1382,6 +1385,7 @@
         private System.Windows.Forms.Label DivString6;
         private System.Windows.Forms.Label DivString2;
         private System.Windows.Forms.Label DivString1;
+        private MetroFramework.Controls.MetroProgressSpinner LoadCircle;
     }
 }
 
